@@ -1148,7 +1148,6 @@
   <block id="91817a3c4feab4788ad5f16317cd2b5e" category="paragraph">指定要用于导出的证书的新密码，然后单击 * 下一步 * 。</block>
   <block id="262ae19666f55b8c3fbe02b43c8f93b8" category="paragraph">正在完成证书导入向导</block>
   <block id="addd3f74b675e28bf71a9fb679c0fac1" category="paragraph">查看摘要，然后单击 * 完成 * 开始导入。</block>
-  <block id="00f1ae92d58286283bc965b1952157af" category="admonition">导入证书应与私钥捆绑在一起（支持的格式为： * 。 pfx ， * p12 ， * 。 p7b ）。</block>
   <block id="104bdf61dc45d8330dd81b72891ea1ad" category="list-text">对 "Personal" 文件夹重复步骤 5 。</block>
   <block id="2b286ead8eb2ff2974da65dbfdfc72f0" category="summary">在安装适用于 Windows 的插件之前，您应了解某些安装要求。</block>
   <block id="bca5d73b25b97404586748bb0cc0c9ea" category="doc">适用于 Microsoft Windows 的 SnapCenter 插件的安装要求</block>
@@ -4195,12 +4194,6 @@
   <block id="e36c8512e3778b0a83d27f616b9ba1ff" category="paragraph">`ssecurity login unlock -user &lt;user_name\&gt; -vserver &lt;cluster_name\&gt;`</block>
   <block id="d96a08e21a2a6f654ce7bfb34d9c3bf4" category="section-title">用于创建集群角色和分配权限的 ONTAP 命令行界面命令</block>
   <block id="166504d6fb19fa3fcbbf622275eef589" category="paragraph">您应运行多个 ONTAP 命令行界面命令来创建集群角色和分配权限。</block>
-  <block id="41d7ade3381c454a1329620f9f658b8b" category="list-text">`ssecurity login role create -role role_name -cmddirname "cluster identity modify" -vserver Cluster_name 或 cluster_name -access all`</block>
-  <block id="6fb89d73c4a5ac47fffbb74dfa2e83f1" category="list-text">`ssecurity login role create -role role_name -cmddirname "cluster identity show" -vserver Cluster_name -access all`</block>
-  <block id="065992cd0013f37f03b4e13303b9ba92" category="list-text">`ssecurity login role create -role role_name -cmddirname "cluster modify" -vserver Cluster_name -access all`</block>
-  <block id="6cf57dddc7246be83fead826cd2d488b" category="list-text">`ssecurity login role create -role role_name -cmddirname "cluster peer show" -vserver Cluster_name -access all`</block>
-  <block id="09835700a8ab8639649722dc18579f0c" category="list-text">`ssecurity login role create -role role_name -cmddirname "cluster show" -vserver Cluster_name -access all`</block>
-  <block id="9d566854ec7ef14de553dc0b2222fae0" category="list-text">`ssecurity login role create -role role_name -cmddirname "event generate-autosupport-log" -vserver Cluster_name -access all`</block>
   <block id="cd2a321672946fd6e39976559e1e72a9" category="list-text">`ssecurity login role create -vserver Cluster_name -role role_name -cmddirname "job history show" -access all`</block>
   <block id="bb513c5a705eb742be0e75eb7c864f5b" category="list-text">`ssecurity login role create -vserver Cluster_name -role role_name -cmddirname "job stop" -access all`</block>
   <block id="6435842f20dddcddfd00a9e7ec2f3111" category="list-text">`ssecurity login role create -vserver Cluster_name -role role_name -cmddirname "LUN" -access all`</block>
@@ -4230,8 +4223,6 @@
   <block id="c1da9af46934efe191b635569c8a647d" category="list-text">`ssecurity login role create -vserver Cluster_name -role role_name -cmddirname "network interface modify" -access readonly`</block>
   <block id="9a51991e1f433b4cc9830e2c68aaf8b2" category="list-text">`ssecurity login role create -vserver Cluster_name -role role_name -cmddirname "network interface show" -access readonly`</block>
   <block id="7f8e9cf7769696e6f10a6ce7e8cdd581" category="list-text">`ssecurity login role create -vserver Cluster_name -role role_name -cmddirname "security login" -access readonly`</block>
-  <block id="2ac25784ce91a23d15f2c0dd086e195b" category="list-text">`ssecurity login role create -role role_name -cmddirname "snapmirror create" -vserver Cluster_name -access all`</block>
-  <block id="c83fbd1412fe34809d8ea25a89cfdc00" category="list-text">`ssecurity login role create -role role_name -cmddirname "snapmirror list-destinations" -vserver Cluster_name -access all`</block>
   <block id="141edf7eae1b698eb667cdadbc54120d" category="list-text">`ssecurity login role create -vserver Cluster_name -role role_name -cmddirname "snapmirror policy add-rule" -access all`</block>
   <block id="2b0f27523f648e21356ed5347cc543e1" category="list-text">`ssecurity login role create -vserver Cluster_name -role role_name -cmddirname "snapmirror policy create" -access all`</block>
   <block id="f8e0b6d327989ea6c240e28d2e57664c" category="list-text">`ssecurity login role create -vserver Cluster_name -role role_name -cmddirname "snapmirror policy delete" -access all`</block>
@@ -4834,7 +4825,6 @@
   <block id="794df3791a8c800841516007427a2aa3" category="cell">许可证</block>
   <block id="b428bd66304bced88a8f85c2e42e2a8d" category="cell">必要时</block>
   <block id="932a86c21601cea5fd4dd8e8496f1347" category="paragraph">基于 SnapCenter 标准控制器</block>
-  <block id="699f1c0496b9360a6686498114b0be37" category="paragraph">FAS ， AFF 和 Amazon FSX 需要此功能</block>
   <block id="fd1eaac7fcf946084f0e116a9bbd7697" category="paragraph">SnapCenter 标准版许可证是一种基于控制器的许可证，作为高级包的一部分提供。如果您拥有 SnapManager 套件许可证，则还可以获得 SnapCenter 标准许可证授权。如果要在 FAS 或 AFF 存储中试用 SnapCenter ，您可以联系销售代表以获取超值包评估许可证。</block>
   <block id="54e6e66bc0a69ef86d9bb0b63900793e" category="admonition">SnapCenter 也作为数据保护包的一部分提供。如果您购买的是 A400 或更高版本，则应购买数据保护包。</block>
   <block id="0bc041414fb0e08ee535e7a621899918" category="paragraph">基于 SnapCenter 标准容量</block>
@@ -7793,4 +7783,16 @@
   <block id="00c62a0799dadf6884615a9dbf7f880b" category="sidebar">适用于 SQL Server 的 SnapCenter 插件的存储灾难恢复</block>
   <block id="01f97c83c1f349ab154ea4e7fed85418" category="sidebar">还原 SQL Server 资源</block>
   <block id="c53965a1bce6ec0b6c1fa17e3314a375" category="sidebar">克隆 SQL Server 数据库资源</block>
+  <block id="da9d98260f9c6d5c0b71c11a6b619ffb" category="admonition">导入证书应与私钥捆绑在一起(支持的格式为：*。pfx、*。p12、*。p7b)。</block>
+  <block id="bd259d74a88fa9ae4cdb9c027643d76a" category="paragraph">对于FAS 和AFF 为必需项</block>
+  <block id="56b5155701c0c0dd57595a6dd3daf917" category="list-text"><block ref="336b55519098bef0384fc43c7f43f47b" prefix="" category="inline-code"></block></block>
+  <block id="eda6105c4f159883b951dcd044964c6f" category="list-text"><block ref="2c9674954a47108e373e077d3bcb8357" prefix="" category="inline-code"></block></block>
+  <block id="4cf7cdb80a69806b961d32bc57f3ac26" category="list-text"><block ref="ad3921143a52d77fc513fd3dae33e149" prefix="" category="inline-code"></block></block>
+  <block id="7b7a10c598084df58b9da02c47af7a60" category="list-text"><block ref="f6adba9e3b22137c40b1d75ee2b37e75" prefix="" category="inline-code"></block></block>
+  <block id="d8135ce9a2bd17b9c659e4605801a778" category="list-text"><block ref="f659aa294fff6eaecdf95876c173adf6" prefix="" category="inline-code"></block></block>
+  <block id="dde541c94f2b033571de6bfe76fcf3c3" category="list-text"><block ref="234efccf9d477e939eeae95c37c1803f" prefix="" category="inline-code"></block></block>
+  <block id="e2bb7a9783ce9c6c02e6001911562e16" category="list-text"><block ref="2e72f8b3689961923dec66f94cdf620f" prefix="" category="inline-code"></block></block>
+  <block id="14952648adc190dcb5a5245293d5f196" category="list-text"><block ref="5eae2e4676c03cd5a87d91855e383655" prefix="" category="inline-code"></block></block>
+  <block id="4574736625a206c36aa88ccb73fced3e" category="list-text"><block ref="9968070f531307f6dc7d65233ad2073f" prefix="" category="inline-code"></block></block>
+  <block id="0d51371cbb850772d2130a36f4368df4" category="paragraph">MetroCluster 显示</block>
 </blocks>
