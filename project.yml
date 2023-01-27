@@ -12,6 +12,9 @@ settings:
     version-number: '4.6'
   - name: SnapCenter 软件
     url: "/snapcenter"
+    version-number: '4.8'
+  - name: SnapCenter 软件
+    url: "/snapcenter-47"
     version-number: '4.7'
   - name: SnapCenter 软件
     url: "/snapcenter-45"

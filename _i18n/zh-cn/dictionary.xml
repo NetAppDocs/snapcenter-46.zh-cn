@@ -589,7 +589,6 @@
   <block id="92cc2a9a2d5824e9c2b490a8fb082801" category="paragraph">如果要在自动删除 SnapCenter 存储之前指定 Snapshot 副本的数量，请选择此选项。</block>
   <block id="0a3cfeac0775871baedb24392bc4423c" category="paragraph">删除早于的 Snapshot 副本</block>
   <block id="9fbc3fb0ee9d4d329dbc0f3053b7b871" category="paragraph">如果要指定 SnapCenter 在删除备份副本之前保留备份副本的天数，请选择此选项。</block>
-  <block id="e19ad44a5949f6c604b843ea60587e80" category="admonition">如果计划启用 SnapVault 复制，则应将保留计数设置为 2 或更高。如果将复制计数设置为 1 ，则保留操作可能会失败。这是因为在将较新的 Snapshot 副本复制到目标之前，第一个 Snapshot 副本是 SnapVault 关系的参考 Snapshot 副本。</block>
   <block id="225ea283dca2590a2a542a782ac56927" category="admonition">对于 ONTAP 9.4 或更高版本上的资源，最大保留值为 1018 ，对于 ONTAP 9.3 或更早版本上的资源，最大保留值为 254 。如果将保留设置为高于底层 ONTAP 版本支持的值，则备份将失败。</block>
   <block id="91c72a64980863f26bec585770f3d671" category="list-text">在复制页面中，指定复制到二级存储系统：</block>
   <block id="1841ccf0461e2eaacdadd6d0965185ca" category="paragraph">创建本地 Snapshot 副本后更新 SnapMirror</block>
@@ -7795,4 +7794,5 @@
   <block id="14952648adc190dcb5a5245293d5f196" category="list-text"><block ref="5eae2e4676c03cd5a87d91855e383655" prefix="" category="inline-code"></block></block>
   <block id="4574736625a206c36aa88ccb73fced3e" category="list-text"><block ref="9968070f531307f6dc7d65233ad2073f" prefix="" category="inline-code"></block></block>
   <block id="0d51371cbb850772d2130a36f4368df4" category="paragraph">MetroCluster 显示</block>
+  <block id="cab00f169fcfeb601710dd89ecbfedf0" category="admonition">您应将保留数量设置为2或更高。保留数量的最小值为2。</block>
 </blocks>
