@@ -74,4 +74,5 @@ NOTE: 您可以手动将新克隆的挂载点注册到 autofs 子系统。新克
 * 您应在 /etc/lvm/lvm.conf 中设置 use_lvmetad = 0 的值，并停止 lvm2-lvmetad 服务，以便在 Oracle Linux 7 或更高版本或 Red Hat Enterprise Linux （ RHEL ） 7 或更高版本的存储区域网络（ SAN ）环境中成功执行克隆。
 * 如果您使用的是 Oracle 数据库 11.2.0.3 或更高版本，并且使用 NID 脚本更改了辅助实例的数据库 ID ，则应安装 13366202 Oracle 修补程序。
 * 您应确保托管卷的聚合应位于 Storage Virtual Machine （ SVM ）的已分配聚合列表中。
+* 您应确保LUN未使用由混合协议iSCSI和FC组成的iGroup映射到AIX主机。有关详细信息，请参见 https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_Plug-in_for_Oracle_operations_fail_with_error_Unable_to_discover_the_device_for_LUN_LUN_PATH["操作失败、并显示错误Unable to discover the device for LUN"^]。
 
