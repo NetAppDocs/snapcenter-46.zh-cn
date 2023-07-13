@@ -3266,12 +3266,7 @@
   <block id="5cfa1ed5b7279fa5a9a9f892a69f175f" category="list-text">适用于 Oracle 数据库的 SnapCenter 插件应安装在备用主机上。</block>
   <block id="b1815397269c524f0557a5562899d82b" category="list-text">克隆主机应能够从主存储或二级存储中发现 LUN 。</block>
   <block id="2d4350dba1907fc52580a8f201e6340e" category="list-text">如果要从主存储或二级（存储或镜像）存储克隆到备用主机，请确保在二级存储和备用主机之间建立 iSCSI 会话，或者为 FC 正确分区 iSCSI 会话。</block>
-  <block id="3e30bf9ff6c5058456cc15f4812939ca" category="inline-link">《 Linux Host Utilities 安装和设置指南》</block>
-  <block id="a13c407c281871b27c7c646287cfb88e" category="list-text"><block ref="a13c407c281871b27c7c646287cfb88e" category="inline-link-rx"></block></block>
-  <block id="99d5e9e8be050afa5c8c0151d7a00740" category="inline-link">《 AIX Host Utilities 安装和设置指南》</block>
-  <block id="cc1ac40238dd772ed5975e72e877a936" category="list-text"><block ref="cc1ac40238dd772ed5975e72e877a936" category="inline-link-rx"></block></block>
   <block id="7ab56a931702e0e68323bba5f9744b17" category="list-text">如果要从存储或镜像存储克隆到同一主机，请确保在存储或镜像存储与主机之间建立 iSCSI 会话，或者为 FC 正确分区 iSCSI 会话。</block>
-  <block id="0bfae4ea7762d7ebae116652014f4cd5" category="list-text">如果要在虚拟化环境中克隆，请确保在主存储或二级存储与托管备用主机的 ESX 服务器之间建立 iSCSI 会话，或者为 FC 正确分区 iSCSI 会话。</block>
   <block id="b6002df6af7fac27dc362f546398ad42" category="list-text">如果源数据库是 ASM 数据库：</block>
   <block id="201c11864b685f8dcf2d90b5b22cd818" category="list-text">ASM 实例应在要执行克隆的主机上启动并运行。</block>
   <block id="9154cf1449b0c872a99006c07487631d" category="list-text">如果要将克隆数据库的归档日志文件放置在专用 ASM 磁盘组中，应在克隆操作之前配置 ASM 磁盘组。</block>
@@ -4663,7 +4658,6 @@
   <block id="91ca015b30de2a05aff2f16ec93231dd" category="paragraph">MySQL 端口</block>
   <block id="ced7e40a06bd114bdd410398e025c7bd" category="paragraph">3306 （ HTTPS ），双向</block>
   <block id="efe50212c612e0d762535b54fd67befd" category="paragraph">此端口用于在 SnapCenter 和 MySQL 存储库数据库之间进行通信。</block>
-  <block id="2fd902191e98265318221699b71a7bbc" category="paragraph">您可以创建从 SnapCenter 服务器到 MySQL 服务器的安全连接。 <block ref="98294cf010405bdb856636ffa91b07b6" category="inline-link-macro-rx"></block></block>
   <block id="4abc501abe98e95144eba2c4d17174ad" category="paragraph">Windows 插件主机</block>
   <block id="0d1c7f3b029cde2163a99c08de7fc3c3" category="paragraph">135 ， 445 （ TCP ）</block>
   <block id="9ce593479d7ce75e23fe1f85463ed78d" category="paragraph">除了端口 135 和 445 之外， Microsoft 指定的动态端口范围也应处于打开状态。远程安装操作使用 Windows Management Instrumentation （ WMI ）服务，该服务会动态搜索此端口范围。</block>
@@ -4685,14 +4679,12 @@
   <block id="48552dce4d9810446c70f66f21f08120" category="paragraph">ONTAP 集群或 SVM 通信端口</block>
   <block id="0e2baf6e148be111338e84354edd4364" category="paragraph">443 （ HTTPS ），双向 80 （ HTTP ），双向</block>
   <block id="a26bff28c23606c7396b4619af8af1bd" category="paragraph">SAL （存储抽象层）使用此端口在运行 SnapCenter 服务器的主机与 SVM 之间进行通信。SnapCenter for Windows 插件主机上的 SAL 当前也使用此端口在 SnapCenter 插件主机与 SVM 之间进行通信。</block>
-  <block id="657328b06bb4725d5cf327593551d8d6" category="paragraph">适用于 SAP HANA 数据库端口的 SnapCenter 插件</block>
   <block id="a703a5f03b1b230925e5a7bef766ea84" category="paragraph">3 个 instance_number13 或 3 个 instance_number15 ， HTTP 或 HTTPS ，双向且可自定义</block>
   <block id="5afe34fece774db451a111901841c2f9" category="paragraph">对于多租户数据库容器（ MDC ）单租户，端口号以 13 结尾；对于非 MDC ，端口号以 15 结尾。</block>
   <block id="f79f66ef0d80eeeac5a8a3b2f86e2d84" category="paragraph">例如， 32013 是实例 20 的端口号， 31015 是实例 10 的端口号。</block>
   <block id="16e7597f6d1a1595520060010a775409" category="paragraph">域控制器通信端口</block>
   <block id="fa51be75ce838b88fdd3475b507591a3" category="paragraph">请参见 Microsoft 文档以确定域控制器上应在防火墙中打开的端口，以便身份验证能够正常工作。</block>
   <block id="c659718bc9e53e4da63cb36d6025798c" category="paragraph">必须在域控制器上打开 Microsoft 所需的端口，以便 SnapCenter 服务器，插件主机或其他 Windows 客户端能够对用户进行身份验证。</block>
-  <block id="8bd83f1f314ef9e02c70e66cc9fb845c" category="paragraph">要修改端口详细信息，请参见<block ref="50723147440c13da7c31ceaceb52ba16" category="inline-link-rx"></block> 修改插件主机^ 。</block>
   <block id="f8a549c5d60e74034419845623f5c51a" category="summary">您可以使用 SnapCenter 标准容量许可证来保护 ONTAP Select 和 Cloud Volumes ONTAP 平台上的数据。</block>
   <block id="247c902b5f932e2e47b98b966ab41a08" category="doc">添加基于 SnapCenter 标准容量的许可证</block>
   <block id="a6f6b8e1900f201c352d37d7ad4eee46" category="paragraph">此许可证具有以下特征：</block>
@@ -4853,9 +4845,6 @@
   <block id="d0487d3c65933c7dda38325ae975026b" category="paragraph">您应安装一个或多个 SnapCenter 许可证。有关如何添加许可证的信息，请参见 <block ref="0ca3149bbd09cc6482f3e5921aad891d" category="inline-link-macro-rx"></block> 或 <block ref="daae28e1483ad0a51ebe8ba1b52cdeb5" category="inline-link-macro-rx"></block>。</block>
   <block id="59746a4c33021bdc9cb716ea91eadbb0" category="section-title">单邮箱恢复（ SMBR ）许可证</block>
   <block id="8119a3fca1d141f0d7a8e7156604c296" category="paragraph">如果您使用适用于 Exchange 的 SnapCenter 插件管理 Microsoft Exchange Server 数据库和单邮箱恢复（ SMBR ），则需要为 SMBR 提供额外的许可证，此许可证需要根据用户邮箱单独购买。</block>
-  <block id="0d5e6d352f8f3217e51e0df5fe981349" category="inline-link">《 SMBR 发行说明》</block>
-  <block id="3305eb9373205972a06c6092007cad70" category="paragraph">请联系您的 NetApp 销售代表以购买 SMBR 许可证，此许可证可作为 1000 ， 5000 ， 15000 和 25000 邮箱的捆绑包单元提供。购买 SKU 后，您可以按照中的说明获取许可证<block ref="26f9ebf6b2beedaef61522277c7c5b3d" category="inline-link-rx"></block>。</block>
-  <block id="e641334b8b39e850790bd4b25b2e3cec" category="paragraph">提交许可证密钥请求时， KrollOntrack 将问题描述 50 个邮箱许可证密钥。根据您的授权， KrollOntrack 将在验证后升级邮箱许可证。</block>
   <block id="554b18f954019b477e2e91a5765d0334" category="summary">除了使用现有 SnapCenter 角色之外，您还可以创建自己的角色并自定义权限。</block>
   <block id="57cf47fd5cdb4fa24f625917dbf7b4cb" category="doc">创建角色</block>
   <block id="736f3871653c42d5fc23c7b63472291d" category="paragraph">您应已以 "SnapCenterAdmin" 角色登录。</block>
@@ -6127,7 +6116,6 @@
   <block id="6728b4a43abbebd3cc07a2cacc5e0c06" category="paragraph">添加主机的用户应具有该主机的管理权限。</block>
   <block id="83aeb7b594481ad598eb0b519836777b" category="summary">SnapCenter 在物理机和虚拟机上均支持多种存储类型。在安装 SnapCenter 自定义插件之前，您必须验证是否支持您的存储类型。</block>
   <block id="c48a2f5430d3aff55420b834363bcc46" category="doc">SnapCenter 自定义插件支持的存储类型</block>
-  <block id="6da41a50505a00272cd3a44cfd33c736" category="paragraph">物理和虚拟服务器（不支持 VMDK 和 RDM LUN ）。</block>
   <block id="e1c05a94a3712659051eb07eafa04bd4" category="paragraph">Java 1.8 （ 64 位） Oracle Java 或 OpenJDK 版本</block>
   <block id="b3ffee37db8c555449d0068b62ebb22f" category="paragraph">有关受支持版本的最新信息，请参见<block ref="1b419d76cc3163a36d36ff494ed65b44" category="inline-link-rx"></block></block>
   <block id="8c1af9a95c5ff9086ee5697a78397ae5" category="summary">通过 SnapCenter 服务器，您可以将应用程序作为 SnapCenter 的插件进行部署和管理。</block>
@@ -6675,7 +6663,6 @@
   <block id="c41e777bd921bd5fc9079273c0ed35db" category="doc">适用于 Microsoft Exchange Server 的 SnapCenter 插件概述</block>
   <block id="e126a0dff251b10008436e2bf2a5dd06" category="paragraph">适用于 Microsoft Exchange Server 的 SnapCenter 插件是 NetApp SnapCenter 软件的主机端组件，可用于对 Exchange 数据库进行应用程序感知型数据保护管理。适用于 Exchange 的插件可自动备份和还原 SnapCenter 环境中的 Exchange 数据库。</block>
   <block id="94bf62b5661b3bf71e7b277fd3572bb1" category="paragraph">安装适用于 Exchange 的插件后，您可以使用采用 NetApp SnapMirror 技术的 SnapCenter 在另一个卷上创建备份集的镜像副本，并使用 NetApp SnapVault 技术执行磁盘到磁盘备份复制，以满足标准合规性或归档要求。</block>
-  <block id="7af37c4476756504b6f4b3b595f4e558" category="paragraph">如果要还原和恢复邮件或邮箱，而不是整个 Exchange 数据库，则可以使用 Single Mailbox Recovery （ SMBR ）软件。</block>
   <block id="ec053c308e147d0958e28a0ea54218e5" category="summary">如果您需要重新生成副本副本，例如，当副本损坏时，可以使用 SnapCenter 中的重新生成功能重新生成到最新备份。</block>
   <block id="aabc88376ed488867dcbd5ebe7ee5f24" category="doc">重新传输被动 Exchange 节点副本</block>
   <block id="95ae09e6950aff657a0ec2b6e13f37f0" category="list-text">您必须使用 SnapCenter 服务器 4.1 或更高版本以及适用于 Exchange 4.1 或更高版本的插件。</block>
@@ -6846,10 +6833,6 @@
   <block id="2807319f8bd59affef72f0158525b495" category="doc">邮件和邮箱的粒度恢复</block>
   <block id="504c76abf7209921081fe0b281166c22" category="inline-link">《 SMBR 管理指南》</block>
   <block id="21816c8bcee290d4ecb4e3f7274ead69" category="paragraph">仅为恢复单封邮件而还原完整数据库将占用大量时间和资源。SMBR 可通过创建 Snapshot 的克隆副本，然后使用 Microsoft API 在 SMBR 中挂载邮箱来帮助快速恢复邮件。有关如何使用 SMBR 的信息，请参见<block ref="ec4bbb4517dd2ded0cc504f8d58977d4" category="inline-link-rx"></block>。</block>
-  <block id="7028749c09c12f8bb923863ce2b0cebe" category="inline-link-macro">SMBR 许可证</block>
-  <block id="e2452ab679d04cfb5a81dfcf28af1c7d" category="list-text"><block ref="e2452ab679d04cfb5a81dfcf28af1c7d" category="inline-link-macro-rx"></block></block>
-  <block id="439c7150753e853ca177cd0e1ef12492" category="inline-link">SMBR 文档库</block>
-  <block id="a586bd7e9166c5253992bcdf4d8b115e" category="list-text"><block ref="a586bd7e9166c5253992bcdf4d8b115e" category="inline-link-rx"></block></block>
   <block id="f367d650e57088caf7b808e01235016d" category="inline-link">如何使用 SnapCenter 从 SMBR 中的二级存储还原</block>
   <block id="41b4c689a8b0e3ba8bfecb2a1e608e46" category="list-text"><block ref="41b4c689a8b0e3ba8bfecb2a1e608e46" category="inline-link-rx"></block></block>
   <block id="f004280f6db6ea5f9302c9851388d751" category="inline-link">使用 SMBR 从 SnapVault 恢复 Microsoft Exchange 邮件</block>
@@ -7706,7 +7689,6 @@
   <block id="832ab315e74cc6d95c21009b0c52cb2b" category="sidebar">命令参考指南</block>
   <block id="cd04e5d32cbb18b14141238ca9a7ea20" category="sidebar">早期版本的 SnapCenter 文档</block>
   <block id="66bdd10c104f52b4f8519b652bc8e084" category="sidebar">NetApp 知识库— SnapCenter</block>
-  <block id="bbbbcb8f41827abddd8ec6151fdf9e99" category="sidebar">SnapCenter 软件</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">概念</block>
   <block id="c16c43065a548034a76faadb18015c27" category="sidebar">SnapCenter 基于角色的访问控制（ RBAC ）</block>
   <block id="fdcd3d6f45be97e0e24b4e793a81fac0" category="sidebar">升级 SnapCenter 服务器和插件</block>
@@ -7799,6 +7781,29 @@
   <block id="3a6eb59ee064b09b020c1a87c5de4988" category="admonition">不支持IBM Java。</block>
   <block id="46d55a8aefdec15a8ce44087c8123826" category="inline-link">操作失败、并显示错误Unable to discover the device for LUN</block>
   <block id="24642a08e354f43168ca4f1178850f84" category="list-text">您应确保LUN未使用由混合协议iSCSI和FC组成的iGroup映射到AIX主机。有关详细信息，请参见<block ref="94f247529a6b6f563b3a8d4772877431" category="inline-link-rx"></block>。</block>
-  <block id="e4d919fee3d32117fafed951c3cdbfe5" category="inline-link">多个选项卡中的SnapCenter登录显示MFA错误</block>
-  <block id="3954e6d000a63f90d0486b1a391b0efd" category="paragraph">有关故障排除信息、请参见<block ref="75a1f4f9379e192498c16a8577967f33" category="inline-link-rx"></block></block>
+  <block id="d21fbb2a5ce79a2a4ef0780b73023b2e" category="paragraph">VM主机上的物理挂载和NFS直接挂载(不支持VMDK和RDM LUN。)</block>
+  <block id="f2688d5a483bee7fcbd80a4e666fc088" category="inline-link">Host Utilities文档</block>
+  <block id="cb6e98b3e61b9a1d942fec6f408e43bb" category="list-text">如果要在虚拟化环境中克隆，请确保在主存储或二级存储与托管备用主机的 ESX 服务器之间建立 iSCSI 会话，或者为 FC 正确分区 iSCSI 会话。
+ +
+有关信息、请参见<block ref="ab48d7186c8a78dfaf0e19af923f0daf" category="inline-link-rx"></block>。</block>
+  <block id="c90d9871b4b86a10a62cd2bf2c1ea688" category="inline-link">使用安装向导安装SnapCenter服务器。</block>
+  <block id="1d72d65109e6906ab81717720199491b" category="paragraph">要自定义端口、请参见<block ref="724cb62a2271057d0541cdb8153d9260" category="inline-link-rx"></block></block>
+  <block id="13aef2b62d8736d22562e85c99ca60eb" category="paragraph">您可以创建从 SnapCenter 服务器到 MySQL 服务器的安全连接。 <block ref="cd7568118ad87382648cb2133a315ffd" category="inline-link-macro-rx"></block></block>
+  <block id="60f072866c2d325a151d990670aa5b4c" category="inline-link">添加主机并安装适用于Linux或AIX的SnapCenter插件软件包。</block>
+  <block id="ac01fd33e160c622162b42b1f7e4fe18" category="paragraph">要自定义端口、请参见<block ref="32882cfc4755cb17eefc59506f087a6f" category="inline-link-rx"></block> 或<block ref="477bb7222f583d223b46c2b591c18bd9" category="inline-link-rx"></block></block>
+  <block id="97e62e758724ab080cbfe2799c388822" category="paragraph">要自定义端口、请参见<block ref="477bb7222f583d223b46c2b591c18bd9" category="inline-link-rx"></block></block>
+  <block id="6529e3cc72b3980f54f2d2ad982c79c2" category="paragraph">适用于SAP HANA数据库的SnapCenter 插件vCode拼写检查程序</block>
+  <block id="fa9e479c30699c2d65f7d1107b28b62a" category="paragraph">要自定义端口、请参见<block ref="6bb20f223531bd59e001c776ffe35812" category="inline-link-rx"></block></block>
+  <block id="0cfe29479bcdd52d04233cb07867b8dc" category="paragraph">要修改端口详细信息，请参见 <block ref="e76f469a4971f2c04dd83de4f8464750" category="inline-link-macro-rx"></block>。</block>
+  <block id="8db273592868b7d940261fe8347b32b4" category="inline-link-macro">CP-00507</block>
+  <block id="802a2285a60e079b52f32ba2c3140d0d" category="paragraph">NetApp®Single Mailbox Recovery已于2023年5月12日终止提供(EOA)。有关详细信息、请参见 <block ref="5a98ce97c5b40ecef6f220dc57d4f14a" category="inline-link-macro-rx"></block>。在支持授权期间、NetApp将继续通过2020年6月24日推出的营销部件号为已购买邮箱容量、维护和支持的客户提供支持。</block>
+  <block id="03da3b5726a1efd6df1fc511966c89a6" category="paragraph">NetApp Single Mailbox Recovery是Ontrack提供的合作伙伴产品。Ontrack PowerControls提供的功能与NetApp Single Mailbox Recovery类似。在EOA日期2023年5月12日之后、客户可以从Ontrack (通过licensingteam@ontrack.com)购买新的Ontrack PowerControls软件许可证以及Ontrack PowerControls维护和支持续订、以实现邮箱粒度恢复。</block>
+  <block id="b73f485c1067e4b3168b292142131855" category="inline-link">在多个选项卡中同时尝试登录时会显示MFA错误</block>
+  <block id="9e4f9470d66f1730ad7525f9043126be" category="paragraph">有关故障排除的信息、请参阅<block ref="361c774ee5cb22be42ef8ea152ed45ad" category="inline-link-rx"></block>。</block>
+  <block id="245360450ea9845b00af24cc4009b53f" category="paragraph">如果要还原和恢复邮件或邮箱，而不是整个 Exchange 数据库，则可以使用 Single Mailbox Recovery （ SMBR ）软件。
+NetApp®Single Mailbox Recovery已于2023年5月12日终止提供(EOA)。在支持授权期间、NetApp将继续通过2020年6月24日推出的营销部件号为已购买邮箱容量、维护和支持的客户提供支持。</block>
+  <block id="01a1924558b81160b570c09fe8a4203c" category="paragraph">NetApp Single Mailbox Recovery是Ontrack提供的合作伙伴产品。Ontrack PowerControls提供的功能与NetApp Single Mailbox Recovery类似。客户可以从Ontrack (通过licensingteam@ontrack.com)购买新的Ontrack PowerControls软件许可证以及Ontrack PowerControls维护和支持续订、以实现精细邮箱恢复。</block>
+  <block id="07c049db30ed73f0d52cca0a50220fcd" category="paragraph">对于SMBR上的追加信息、请参阅以下内容：</block>
+  <block id="81845e1ca99f532dc90bd83c62202fc0" category="inline-link">如何使用SMBR手动还原单个项目(也适用于Ontrack电源控制还原)</block>
+  <block id="db0c2525f5f13ece537a8604a4046d7c" category="list-text"><block ref="db0c2525f5f13ece537a8604a4046d7c" category="inline-link-rx"></block></block>
 </blocks>
