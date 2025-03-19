@@ -7781,4 +7781,30 @@ NetApp®Single Mailbox Recovery已于2023年5月12日终止提供(EOA)。在支�
   <block id="db0c2525f5f13ece537a8604a4046d7c" category="list-text"><block ref="db0c2525f5f13ece537a8604a4046d7c" category="inline-link-rx"></block></block>
   <block id="9e19caeb431a5e29a1a63e3cee4b36c9" category="inline-link">借助ONTAP实现Oracle数据保护</block>
   <block id="d118010bb2b3542007c6749bfd237123" category="list-text"><block ref="d118010bb2b3542007c6749bfd237123" category="inline-link-rx"></block></block>
+  <block id="84ecc1fe2cdb5ee0d1406cce859e2541" category="sidebar">SnapCenter 软件是一个简单，集中化且可扩展的平台，可为混合云中任意位置的 ONTAP 系统上运行的应用程序，数据库，主机文件系统和 VM 提供应用程序一致的数据保护。本文档库包含版本4.6的信息。</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">开始使用</block>
+  <block id="4b09ab22f471832d6728b6e5b9a09aa8" category="sidebar">了解 SnapCenter</block>
+  <block id="f13fe3401f6969cdc9233f418f92df1f" category="sidebar">有关保护 SQL Server 数据库的快速参考</block>
+  <block id="c70f316066c903485b01199c3d46cf0e" category="sidebar">升级 SnapCenter 服务器和 SnapCenter 插件</block>
+  <block id="085f5df3ea322139c5a71aed9fd908cd" category="sidebar">所需许可证</block>
+  <block id="2be699659df3451ee9edbd78cb507a23" category="sidebar">配置端口</block>
+  <block id="134a140044941809d4caf4bac0b38860" category="sidebar">使用 F5 配置高可用性</block>
+  <block id="044aa1b4f857dd75e47b8ffafe8440c0" category="sidebar">SnapCenter 服务器的灾难恢复</block>
+  <block id="1667afeb46f8ebe931310ebf898d3035" category="sidebar">安装适用于 Microsoft SQL Server 数据库的 SnapCenter 插件</block>
+  <block id="d6f047ec290f922c255788a6f1fa067a" category="sidebar">创建用于备份 SQL Server 数据库的策略</block>
+  <block id="54bab37592758bedbe84c23554e20c3a" category="sidebar">备份 SQL Server 数据库</block>
+  <block id="ecbde4f5ef166bdedbf1d5fa8e75708e" category="sidebar">安装适用于 SAP HANA 数据库的 SnapCenter 插件</block>
+  <block id="f65529b9218a6f6ff3111f2cd37df8ac" category="sidebar">创建策略以备份 SAP HANA 数据库</block>
+  <block id="d6b9b6e8bb8de7b78f01bde37923ad06" category="sidebar">安装适用于 Oracle 数据库的 SnapCenter 插件</block>
+  <block id="501ba60aa494a0bae93d0f6bf28c33d6" category="sidebar">创建用于备份 Oracle 数据库的策略</block>
+  <block id="8d98e1e37d7a0757bbdfdf54bf8aa618" category="sidebar">保护 VMware 上的数据库</block>
+  <block id="235a656535515ab3518937c09836e60d" category="sidebar">了解适用于 VMware vSphere 的 SnapCenter 插件</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客和社区</block>
+  <block id="e9b322021f8597d3f9236f7d98977637" category="sidebar">NetApp 博客— SnapCenter</block>
+  <block id="58e8103ac0c834ff3f8387f88cbd4c9a" category="sidebar">NetApp 社区— SnapCenter</block>
+  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">更多资源</block>
+  <block id="0346326f6434b805abd604ddc350d8ed" category="sidebar">《 cmdlet 参考指南》</block>
+  <block id="832ab315e74cc6d95c21009b0c52cb2b" category="sidebar">命令参考指南</block>
+  <block id="cd04e5d32cbb18b14141238ca9a7ea20" category="sidebar">早期版本的 SnapCenter 文档</block>
+  <block id="66bdd10c104f52b4f8519b652bc8e084" category="sidebar">NetApp 知识库— SnapCenter</block>
 </blocks>
