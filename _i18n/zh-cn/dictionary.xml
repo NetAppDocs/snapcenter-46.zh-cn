@@ -3638,7 +3638,6 @@
   <block id="9aa96933bdaa05ec27830a1517e54f9a" category="paragraph">启用或禁用存储灾难恢复</block>
   <block id="9bb6ced642f1be37b6ad58e85292fffa" category="paragraph">` /4.5/disasterrecovery/storage`</block>
   <block id="27e7993c4841ae5fd670cdd945ccb96d" category="inline-link">灾难恢复 API</block>
-  <block id="90840bc3d6109c892e0f709274fdc6b6" category="paragraph">有关详细信息，请参见<block ref="af818973dd6acaf1e28a3bd4ca9bd4a5" category="inline-link-rx"></block> 视频。</block>
   <block id="88fe5dc687615e8d7a6594570ed65df2" category="summary">介绍如何使用 REST API 执行多个 SnapCenter 管理操作。REST API 通过 Swagger 网页公开。</block>
   <block id="b1cb2610ec57bfba865feaa69174b692" category="paragraph">REST API 可用于执行多个 SnapCenter 管理操作。REST API 通过 Swagger 网页公开。</block>
   <block id="dcddc43fec5e5fa500cf485861b6ccfe" category="paragraph">您可以访问位于 ｛ \https://&lt;SnapCenter_IP_address_or_name&gt;:&lt;SnapCenter_port&gt;/swagger/_ ｝ 的 Swagger 网页，以显示 REST API 文档以及手动对 API 调用执行问题描述操作。</block>
@@ -6834,7 +6833,6 @@
   <block id="f367d650e57088caf7b808e01235016d" category="inline-link">如何使用 SnapCenter 从 SMBR 中的二级存储还原</block>
   <block id="41b4c689a8b0e3ba8bfecb2a1e608e46" category="list-text"><block ref="41b4c689a8b0e3ba8bfecb2a1e608e46" category="inline-link-rx"></block></block>
   <block id="f004280f6db6ea5f9302c9851388d751" category="inline-link">使用 SMBR 从 SnapVault 恢复 Microsoft Exchange 邮件</block>
-  <block id="1b0fb59a5bc951f7dc82cb43fe362145" category="list-text"><block ref="00a76af185a73b84e54e96058031aef5" category="inline-link-rx"></block></block>
   <block id="674953c87c49e4db065662bf6aeeaf35" category="summary">您可以使用 SnapCenter 对 SQL Server 资源执行不同类型的还原操作。</block>
   <block id="9aee52333803867b36faef87e9cf417d" category="doc">还原操作的类型</block>
   <block id="516f3ba2356fc63418504ca4271a18ef" category="paragraph">在以下情况下，您可以在最短时间内还原或还原到上一时间点：</block>
@@ -7807,4 +7805,6 @@ NetApp®Single Mailbox Recovery已于2023年5月12日终止提供(EOA)。在支�
   <block id="832ab315e74cc6d95c21009b0c52cb2b" category="sidebar">命令参考指南</block>
   <block id="cd04e5d32cbb18b14141238ca9a7ea20" category="sidebar">早期版本的 SnapCenter 文档</block>
   <block id="66bdd10c104f52b4f8519b652bc8e084" category="sidebar">NetApp 知识库— SnapCenter</block>
+  <block id="c23d56866a5b11fd0d8dc189fcf21298" category="list-text"><block ref="341e3fddad4b27511133b6917a75bb8a" category="inline-link-rx"></block></block>
+  <block id="86ea794e2d7fcff39be7476200e06b51" category="paragraph">有关详细信息、请参见<block ref="a62945bfb4dadbe324d9f8ad560f4a1c" category="inline-link-rx"></block>视频。</block>
 </blocks>
