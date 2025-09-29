@@ -142,9 +142,6 @@ NOTE: 适用于 UNIX 的 SnapCenter 插件不是独立插件，不能单独安�
 
 
 * SnapCenter 自定义插件
-+
-自定义插件受社区支持，可从下载 https://automationstore.netapp.com/home.shtml["NetApp 存储自动化商店"]。
-
 
 
 适用于 VMware vSphere 的 SnapCenter 插件（以前称为 NetApp 数据代理）是一个独立的虚拟设备，支持在虚拟化数据库和文件系统上执行 SnapCenter 数据保护操作。
@@ -250,7 +247,6 @@ Linux 或 Windows
  a| 
 自定义插件
  a| 
-https://automationstore.netapp.com/home.shtml["NetApp 存储自动化商店"^]
  a| 
 对于文件系统备份，请使用适用于 Windows 的插件
  a| 
@@ -332,8 +328,6 @@ NOTE: 适用于 Windows 的插件在物理和 RDM LUN 上配置 SMB 共享和 Wi
 * 支持在另一个卷上为备份集创建镜像副本，并执行磁盘到磁盘备份复制。
 * 同时支持 Windows 和 Linux 环境。在 Windows 环境中，通过自定义插件的自定义应用程序可以选择使用适用于 Microsoft Windows 的 SnapCenter 插件进行文件系统一致的备份。
 
-
-可以从下载适用于 SnapCenter 软件的 MySQL ， DB2 和 MongoDB 自定义插件示例 https://automationstore.netapp.com/home.shtml["NetApp 存储自动化商店"^]。
 
 
 NOTE: MySQL ， DB2 和 MongoDB 自定义插件仅可通过 NetApp 社区获得支持。

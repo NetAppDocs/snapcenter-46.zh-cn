@@ -34,7 +34,6 @@
   <block id="5c4de78a2b621074bf68ab1c644af297" category="inline-link-macro">生成 CA 证书 CSR 文件</block>
   <block id="0ff4fbc942cecadf8b215fa3272db57a" category="paragraph">您应在安装 SnapCenter 服务器和相应插件后部署 CA 证书。有关详细信息，请参见 <block ref="de78619abe7dcb7b53be3c4ab98b1283" category="inline-link-macro-rx"></block>。</block>
   <block id="8fbcd736aac5b9c6baba8f4db349f50e" category="inline-link">创建和导入证书</block>
-  <block id="c0ddbdc2a9782e98d40c313e95e09705" category="paragraph">您还可以为适用于 VMware vSphere 的 SnapCenter 插件部署 CA 证书。有关详细信息，请参见<block ref="f5f72b20763af718f23ba7b5cc6b11fa" category="inline-link-rx"></block>。</block>
   <block id="2dccbe897666a5dff6976fa3fd6bab8f" category="summary">通过 SnapCenter 基于角色的访问控制（ Role-Based Access Control ， RBAC ），您可以创建角色并为这些角色添加权限，然后将用户或用户组分配给这些角色。这样， SnapCenter 管理员就可以创建一个集中管理的环境，而应用程序管理员则可以管理数据保护作业。SnapCenter 附带了一些预定义的角色和权限。</block>
   <block id="45538cf22616d249e70f0697a94497d7" category="doc">RBAC 权限和角色</block>
   <block id="e2bd415c54b23599a45de668297fed62" category="paragraph">通过 SnapCenter 基于角色的访问控制（ Role-Based Access Control ， RBAC ），您可以创建角色并为这些角色分配权限，然后将用户或用户组分配给这些角色。这样， SnapCenter 管理员就可以创建一个集中管理的环境，而应用程序管理员则可以管理数据保护作业。SnapCenter 附带了一些预定义的角色和权限。</block>
@@ -210,7 +209,6 @@
   <block id="f131ab7559cf49d32373fdff9b7cbaaa" category="admonition">适用于 UNIX 的 SnapCenter 插件不是独立插件，不能单独安装。安装适用于 Oracle 数据库的 SnapCenter 插件时，系统会自动安装此插件。</block>
   <block id="ad41f7a9e85843a998743e132424a395" category="list-text">SnapCenter 自定义插件</block>
   <block id="b6ddf325474f53377de3e17f65c983f3" category="inline-link">NetApp 存储自动化商店</block>
-  <block id="4d85577b7a29bc5d237d7c7beb5ebc7c" category="paragraph">自定义插件受社区支持，可从下载<block ref="14adb94a4faec9ea0e0992d90e98b640" category="inline-link-rx"></block>。</block>
   <block id="4bfa416280fc4f5037348c904859e18f" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件（以前称为 NetApp 数据代理）是一个独立的虚拟设备，支持在虚拟化数据库和文件系统上执行 SnapCenter 数据保护操作。</block>
   <block id="2aa0571a478e7d0fecaba7f94c88bf25" category="section-title">SnapCenter 服务器</block>
   <block id="e4b70dc0a2377b7bbef832a55b2d603c" category="paragraph">SnapCenter 服务器包括一个 Web 服务器，一个基于 HTML5 的集中式用户界面， PowerShell cmdlet ， REST API 和 SnapCenter 存储库。</block>
@@ -248,7 +246,6 @@
   <block id="5d5cde1005f814f00d44032094a9a04f" category="paragraph">HDBSQL 客户端主机</block>
   <block id="4abb41aae1dfe9c81afb3c3672df559c" category="paragraph">Linux 或 Windows</block>
   <block id="98c5825b9b497a5e2a61777325ed802f" category="paragraph">自定义插件</block>
-  <block id="824fb725cd78913cf73d5b8ff0ebe97c" category="paragraph"><block ref="824fb725cd78913cf73d5b8ff0ebe97c" category="inline-link-rx"></block></block>
   <block id="fde05c42841c2ef404a5ed9e7babdf62" category="paragraph">对于文件系统备份，请使用适用于 Windows 的插件</block>
   <block id="0c6a45824d8aa208ef88a943b710cb80" category="paragraph">自定义应用程序主机</block>
   <block id="a364132418180f0b14b5eb7db8b87808" category="admonition">适用于 VMware vSphere 的 SnapCenter 插件支持对虚拟机（ VM ），数据存储库和虚拟机磁盘（ VMDK ）执行崩溃状态一致和 VM 一致的备份和还原操作，并支持 SnapCenter 应用程序专用插件，以保护虚拟化数据库和文件系统的应用程序一致的备份和还原操作。</block>
@@ -283,7 +280,6 @@
   <block id="7362a758a4c65bbbb4dc5e948b5a5896" category="list-text">支持自定义插件来管理其他 SnapCenter 插件不支持的应用程序或数据库。自定义插件不会在 SnapCenter 安装过程中提供。</block>
   <block id="7f8b22ee024d485fad8d1c95beda80f7" category="list-text">支持在另一个卷上为备份集创建镜像副本，并执行磁盘到磁盘备份复制。</block>
   <block id="0bdb27719827039d79994d2a17575b2e" category="list-text">同时支持 Windows 和 Linux 环境。在 Windows 环境中，通过自定义插件的自定义应用程序可以选择使用适用于 Microsoft Windows 的 SnapCenter 插件进行文件系统一致的备份。</block>
-  <block id="bef4d00fa5327b323d516fbe5c1bce99" category="paragraph">可以从下载适用于 SnapCenter 软件的 MySQL ， DB2 和 MongoDB 自定义插件示例<block ref="554f546cf121f440c6cfd97d643765df" category="inline-link-rx"></block>。</block>
   <block id="dbe26f725743679de01e440c2e7697ad" category="admonition">MySQL ， DB2 和 MongoDB 自定义插件仅可通过 NetApp 社区获得支持。</block>
   <block id="a84dab656bf020b14be7a5c3596b4288" category="paragraph">NetApp 支持创建和使用自定义插件的功能；但是， NetApp 不支持您创建的自定义插件。</block>
   <block id="07af457ed5409f58b0d5ca2b41b5ec39" category="inline-link-macro">为您的应用程序开发一个插件</block>
@@ -7460,7 +7456,6 @@
   <block id="953acf14bebe77c11e648186f3957214" category="list-text">您必须具有对 SQL Server 具有 sysadmin 权限的用户。</block>
   <block id="d165009fc919b7c43f63036983c47ae0" category="paragraph">适用于 Microsoft SQL Server 的 SnapCenter 插件使用 Microsoft VDI Framework ，这需要 sysadmin 访问权限。</block>
   <block id="9221af74572734362746f0af9104d884" category="inline-link">Microsoft 支持文章 2926557 ： SQL Server VDI 备份和还原操作需要 sysadmin 特权</block>
-  <block id="c081ea6f4c7f13224651487050d87831" category="paragraph"><block ref="c081ea6f4c7f13224651487050d87831" category="inline-link-rx"></block></block>
   <block id="9c9a08a242e9f6311be9fa5bd945d582" category="list-text">如果安装了 SnapManager for Microsoft SQL Server ，则必须已停止或禁用此服务和计划。</block>
   <block id="1931c747684bb6010ac638ae2be606b3" category="paragraph">如果您计划将备份或克隆作业导入到 SnapCenter 中，请勿卸载适用于 Microsoft SQL Server 的 SnapManager 。</block>
   <block id="024ecfe0da835b1f362b5e64ec1408ab" category="list-text">主机必须可从服务器解析为完全限定域名（ FQDN ）。</block>
@@ -7807,4 +7802,6 @@ NetApp®Single Mailbox Recovery已于2023年5月12日终止提供(EOA)。在支�
   <block id="66bdd10c104f52b4f8519b652bc8e084" category="sidebar">NetApp 知识库— SnapCenter</block>
   <block id="c23d56866a5b11fd0d8dc189fcf21298" category="list-text"><block ref="341e3fddad4b27511133b6917a75bb8a" category="inline-link-rx"></block></block>
   <block id="86ea794e2d7fcff39be7476200e06b51" category="paragraph">有关详细信息、请参见<block ref="a62945bfb4dadbe324d9f8ad560f4a1c" category="inline-link-rx"></block>视频。</block>
+  <block id="34d41de6bbbd59c588068d1c2b2e073d" category="paragraph">您还可以为 VMware vSphere 的SnapCenter插件部署 CA 证书。有关更多信息，请参阅<block ref="bdfc8d677279c2d2dc7a5041c41cc2d9" category="inline-link-rx"></block> 。</block>
+  <block id="2af0fc8c21c11cf5ed04e0063f53931e" category="paragraph"><block ref="2af0fc8c21c11cf5ed04e0063f53931e" category="inline-link-rx"></block></block>
 </blocks>
