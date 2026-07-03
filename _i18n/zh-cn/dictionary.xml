@@ -208,7 +208,6 @@
   <block id="41055e583e58ee1a92771580cdfe9b3f" category="list-text">适用于 AIX 的 SnapCenter 插件软件包，其中包括以下插件：</block>
   <block id="f131ab7559cf49d32373fdff9b7cbaaa" category="admonition">适用于 UNIX 的 SnapCenter 插件不是独立插件，不能单独安装。安装适用于 Oracle 数据库的 SnapCenter 插件时，系统会自动安装此插件。</block>
   <block id="ad41f7a9e85843a998743e132424a395" category="list-text">SnapCenter 自定义插件</block>
-  <block id="b6ddf325474f53377de3e17f65c983f3" category="inline-link">NetApp 存储自动化商店</block>
   <block id="4bfa416280fc4f5037348c904859e18f" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件（以前称为 NetApp 数据代理）是一个独立的虚拟设备，支持在虚拟化数据库和文件系统上执行 SnapCenter 数据保护操作。</block>
   <block id="2aa0571a478e7d0fecaba7f94c88bf25" category="section-title">SnapCenter 服务器</block>
   <block id="e4b70dc0a2377b7bbef832a55b2d603c" category="paragraph">SnapCenter 服务器包括一个 Web 服务器，一个基于 HTML5 的集中式用户界面， PowerShell cmdlet ， REST API 和 SnapCenter 存储库。</block>
@@ -766,7 +765,6 @@
   <block id="95d04783b89b5d5f8a4c905e6a139950" category="paragraph">有关部署的信息，请参见<block ref="09fdd78e4c4f2997a9baa6b6e4423d52" category="inline-link-rx"></block>。</block>
   <block id="0a43bd1f35095f6ca081444f65372381" category="section-title">部署 CA 证书</block>
   <block id="c9abc3786b4bb68c9d780c7e265731ff" category="inline-link">创建或导入 SSL 证书</block>
-  <block id="77e6d176ef9b9d439f75a9636390005d" category="paragraph">要使用适用于 VMware vSphere 的 SnapCenter 插件配置 CA 证书，请参见<block ref="1b5e247395791063ff5d33fa4a1ba4ec" category="inline-link-rx"></block>。</block>
   <block id="3228309100966454e78a162d4ba9bd75" category="section-title">配置此 CRL 文件</block>
   <block id="456dce50d13fcf7c2c4881e39c114254" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件会在预先配置的目录中查找此 CRL 文件。适用于 VMware vSphere 的 SnapCenter 插件的 CRL 文件的默认目录为： _/opt/netapp/config/CRL_ 。</block>
   <block id="1b782c06b199c89589ed8bcf1a6ca9ab" category="paragraph">您可以在此目录中放置多个 CRL 文件。系统将根据每个 CRL 验证传入的证书。</block>
@@ -3774,7 +3772,6 @@
   <block id="06b047d338ab216568f24797a92a475a" category="list-text">您应已将 RBAC 用户分配给 RBAC 角色。</block>
   <block id="4fcc15e06159b8ced3ec8f0100fa1a04" category="list-text">您应已将 RBAC 用户分配给主机，适用于 Microsoft SQL Server 的 SnapCenter 插件，凭据，克隆生命周期资源组和存储系统。</block>
   <block id="92d37724657724129ae0451584c728aa" category="inline-link">删除适用于 VMware vSphere 的 SnapCenter 插件</block>
-  <block id="00b3864f3eb01692ecdfe4f18c19971c" category="paragraph">有关卸载适用于 VMware vSphere 的 SnapCenter 插件的信息，请参见<block ref="17b687e0a579b9f5223d3c7119027217" category="inline-link-rx"></block>。</block>
   <block id="1f3416d24aa4604f3bf013f7b5ba6d0f" category="summary">如果您确定不再需要单个插件或插件软件包，则可以使用 SnapCenter 界面将其卸载。</block>
   <block id="76af7718f89458bae85fc299897539a1" category="doc">使用 SnapCenter 图形用户界面卸载插件</block>
   <block id="59c6427d777966a59438a00364121a39" category="list-text">您应已删除要卸载的插件软件包的资源组。</block>
@@ -4902,8 +4899,6 @@
   <block id="b88dbedd8fcea13adf629d85780a25e4" category="list-text">适用于 Windows 的插件不支持在 Microsoft 集群中的虚拟机上运行 MPIO 。</block>
   <block id="5010ac065b072d3a5a66d4913af22358" category="section-title">创建共享 FC RDM LUN</block>
   <block id="10680a7aa79949d8b454b29a782cc64a" category="paragraph">在使用 FC RDM LUN 在 Microsoft 集群中的节点之间共享存储之前，必须先创建共享仲裁磁盘和共享存储磁盘，然后将其添加到集群中的两个虚拟机。</block>
-  <block id="cbdb6828febec04786f22df9a1ccc748" category="inline-link">跨物理主机的集群虚拟机</block>
-  <block id="343e62dffb88999e9c503088341e1fc0" category="paragraph">共享磁盘不是使用适用于 Windows 的插件创建的。您应创建共享 LUN ，然后将其添加到集群中的每个虚拟机。有关信息，请参见<block ref="4339506e2feb8115940eea5a6e9ba248" category="inline-link-rx"></block>。</block>
   <block id="9a1e93115df18651562a9dbdedd4b61d" category="summary">SnapCenter 支持基于角色的访问控制（ Role-Based Access Control ， RBAC ）。SnapCenter 管理员通过 SnapCenter RBAC 将角色和资源分配给工作组或 Active Directory 中的用户或 Active Directory 中的组。现在， RBAC 用户可以使用分配的角色登录到 SnapCenter 。</block>
   <block id="3a42fbb761150585f7eaf7c0a04e8c90" category="doc">登录到 SnapCenter</block>
   <block id="adc5fe8b45ecd95856d19e35346df6c7" category="list-text">您应在 Windows Server Manager 中启用 Windows 进程激活服务（ Wwas ）。</block>
@@ -5127,23 +5122,14 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
-  <block id="de6edae22bc37b97b38a15c7f8af62e2" category="inline-link"><block ref="de6edae22bc37b97b38a15c7f8af62e2" category="inline-link-rx"></block></block>
-  <block id="bb66384fc72d3c628df8a5f0f82af691" category="paragraph"><block ref="bb66384fc72d3c628df8a5f0f82af691" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 徽标和 NetApp 商标页面上列出的标记是 NetApp 、 Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。</block>
-  <block id="a93bc0a57623c2facaa010825c808507" category="inline-link"><block ref="a93bc0a57623c2facaa010825c808507" category="inline-link-rx"></block></block>
-  <block id="e895a12067be0bbd74a4e8b2b0aa1151" category="paragraph"><block ref="e895a12067be0bbd74a4e8b2b0aa1151" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
-  <block id="547ea2e305891e64d8e744949b0aca2c" category="inline-link"><block ref="547ea2e305891e64d8e744949b0aca2c" category="inline-link-rx"></block></block>
-  <block id="f48d97bbf0d920d837c970ab54fcbf14" category="paragraph"><block ref="f48d97bbf0d920d837c970ab54fcbf14" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
-  <block id="50921fca0d376fca62102a5e608994e2" category="inline-link"><block ref="50921fca0d376fca62102a5e608994e2" category="inline-link-rx"></block></block>
-  <block id="3440f69304b6f0194e5502be93aede3f" category="paragraph"><block ref="3440f69304b6f0194e5502be93aede3f" category="inline-link-rx"></block></block>
   <block id="b4de17ead867a3cf0b9d11e57e562672" category="section-title">机器翻译</block>
   <block id="19d4bd8b5bc76a91b74c1aa69ecea894" category="paragraph">有关本地化内容的重要信息。</block>
   <block id="db9bfd81e26275c9db26e2db3ac172c3" category="inline-link"><block ref="db9bfd81e26275c9db26e2db3ac172c3" category="inline-link-rx"></block></block>
-  <block id="53028fa3036b4b4d8b4ba1c27bf5f0f8" category="paragraph"><block ref="53028fa3036b4b4d8b4ba1c27bf5f0f8" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
   <block id="0d06100a9c9a8a7758a0d58988e99d2f" category="paragraph">提供有关本产品中使用的第三方版权和许可证的信息。您的产品不一定使用下面所述的所有软件组件。</block>
   <block id="341b772831859beaa3c9f1cd40c3fdf7" category="inline-link">SnapCenter 4.6 注意事项</block>
@@ -5836,7 +5822,6 @@
   <block id="dd4b762c191c7a235ce898c094749679" category="paragraph">您可以从添加主机页面安装自定义插件和存储插件。</block>
   <block id="a344a2fc65197b27dcccc38ac1ef85a3" category="inline-link-macro">添加主机并在远程主机上安装插件软件包。</block>
   <block id="a5f00a79eb947021702cee9fc1d05354" category="paragraph"><block ref="a5f00a79eb947021702cee9fc1d05354" category="inline-link-macro-rx"></block></block>
-  <block id="56cb38ae9f515c555dfc8601fd4c0070" category="paragraph">NetApp 还提供 MySQL ， MaxDB ， DB2 ， Sybase ， DPGLUE ， MongoDB ， ORASCPM 和 PostgreSQL 自定义插件。这些插件可从下载<block ref="554f546cf121f440c6cfd97d643765df" category="inline-link-rx"></block>。</block>
   <block id="022c56789408e44b04cf1944babfa527" category="admonition">SnapCenter 支持策略将涵盖对 SnapCenter 自定义插件框架，核心引擎和关联 API 的支持。支持范围不包括插件源代码以及基于自定义插件框架构建的关联脚本。</block>
   <block id="4a7e6c3a47ec940f7e3059981cd146da" category="paragraph">您可以参考创建自己的自定义插件 <block ref="9ef4188c6ecd9ed20479c22e2842115e" category="inline-link-macro-rx"></block>。</block>
   <block id="665e27cacd5b140b3ca5a518bbd41724" category="doc">备份自定义插件资源的资源组</block>
@@ -6220,7 +6205,6 @@
   <block id="5acceba2cee4fe40d121e90d997fa439" category="doc">向 SnapCenter 自定义插件添加资源</block>
   <block id="09f1a1e976c751f8b861a75492f30752" category="list-text">您必须已创建自定义插件。</block>
   <block id="797f1e031962d70e46335925184febf4" category="list-text">您必须已将插件上传到 SnapCenter 服务器。</block>
-  <block id="eb609425665410a2e3cc5d5000880798" category="paragraph">您还可以为 MySQL 和 DB2 应用程序添加资源。这些插件可从下载<block ref="14adb94a4faec9ea0e0992d90e98b640" category="inline-link-rx"></block>。</block>
   <block id="134848154c843b2b7ebbc0c3bf4c17a4" category="list-text">在资源页面中，单击 * 添加资源 * 。</block>
   <block id="0750f05e0542388153777a63b5fa887c" category="paragraph">输入资源的名称。</block>
   <block id="0e4c9e1ee0802a727d5dd0fcacc4a158" category="paragraph">选择类型。type 是用户根据插件问题描述文件定义的。例如，数据库和实例。</block>
@@ -6301,8 +6285,6 @@
   <block id="c1d36bef52fc074303f12c52de7b144f" category="list-text">单击 * 上传 * 。</block>
   <block id="14c63a85dc0d2eb17d6a4de481e630f9" category="paragraph">上传软件包之前，会验证压缩后的自定义插件文件夹中的描述符 .xml 文件。</block>
   <block id="22b9c22ece0544103d4ef5fde3f3591c" category="paragraph">此时将列出上传到 SnapCenter 服务器的自定义插件。</block>
-  <block id="00ebf5cec061915cd0462d73602dcad8" category="inline-link">NetApp 自动化商店</block>
-  <block id="fa5ad2e8d730251bd90eea875f95091c" category="paragraph">如果要管理 MySQL 或 DB2 应用程序，可以使用 NetApp 提供的 MySQL 和 DB2 自定义插件。MySQL 和 DB2 自定义插件可从获取<block ref="480a3096e7d732b8f84f20e353e713fd" category="inline-link-rx"></block></block>
   <block id="ab443ca6692007d7b4d66d4e3044cbd8" category="paragraph">如果未选中 * 跳过预检查 * 复选框，则主机将通过验证以验证主机是否满足安装插件的要求。磁盘空间， RAM ， PowerShell 版本， .NET 版本，位置（对于 Windows 插件）和 Java 版本（对于 Linux 插件）均已根据最低要求进行验证。如果不满足最低要求，则会显示相应的错误或警告消息。</block>
   <block id="05095cde7f504457949712770df49d6a" category="summary">确定备份计划的最关键因素是资源的更改率。备份资源的频率越高， SnapCenter 用于还原的归档日志就越少，从而可以加快还原操作的速度。</block>
   <block id="e4e0cadac57fe2f7fc1d76c019a73967" category="doc">自定义插件资源的备份计划</block>
@@ -6873,10 +6855,7 @@
   <block id="9b51fddaf011faab92bf06f41ccf6d11" category="inline-link-macro">为 SQL Server 创建资源组并附加策略</block>
   <block id="35002a531b4134648eef7b46ee445a29" category="paragraph"><block ref="35002a531b4134648eef7b46ee445a29" category="inline-link-macro-rx"></block></block>
   <block id="51fb25555c87830dd2151ad5f3b7a845" category="paragraph"><block ref="51fb25555c87830dd2151ad5f3b7a845" category="inline-link-macro-rx"></block></block>
-  <block id="db9c751c1327ee48b470f3140421daf6" category="inline-link">由于 tcp_timeout 存在延迟，备份操作失败并显示 MySQL 连接错误</block>
-  <block id="0cd607c6c3ab41f1a5532b188171495c" category="paragraph"><block ref="0cd607c6c3ab41f1a5532b188171495c" category="inline-link-rx"></block></block>
   <block id="c473dc65af16d92c688e88cffad5b825" category="inline-link">备份失败，并显示 Windows 计划程序错误</block>
-  <block id="ee70f525f7b0b70b3e7de9d8f872cbe4" category="paragraph"><block ref="ee70f525f7b0b70b3e7de9d8f872cbe4" category="inline-link-rx"></block></block>
   <block id="0ebfc8ee6fcce1769e02ab4f33c1967f" category="summary">资源组是指添加要同时备份和保护的资源的容器。通过资源组，您可以同时备份与给定应用程序关联的所有数据。任何数据保护作业都需要资源组。您还必须将一个或多个策略附加到资源组，才能定义要执行的数据保护作业类型。</block>
   <block id="8a256fc5affeb3e3570c3c8e73ce682b" category="paragraph">您可以单独保护资源，而无需创建新的资源组。您可以在受保护资源上创建备份。</block>
   <block id="80b4392036b2c71988077d45b3eedc67" category="paragraph">输入一个或多个标签，以帮助您稍后搜索资源组。例如，如果您将 HR 作为标记添加到多个资源组，则稍后可以找到与 HR 标记关联的所有资源组。</block>
@@ -6982,7 +6961,6 @@
   <block id="5891deda92209d1d45144775b7d5c20d" category="admonition">您不应重命名在Windows计划程序或SQL Server代理中创建的备份作业。</block>
   <block id="1ca9ef3a64115b9b5155a63404740914" category="paragraph">此时将创建一个隐式资源组。您可以通过从用户访问页面中选择相应的用户或组来查看此信息。隐式资源组类型为 "`Resource` " 。</block>
   <block id="f1b0e4721c4648a3a0d9747b1df24457" category="inline-link">暂停或分组资源操作失败</block>
-  <block id="393997bd3b722d52ae03ce598aa5cfec" category="paragraph"><block ref="393997bd3b722d52ae03ce598aa5cfec" category="inline-link-rx"></block></block>
   <block id="bfa8c341f9069cab983b83a7b3d6e229" category="summary">您可以将所有数据库放在同一个卷上，因为备份策略可以选择设置每个备份的最大数据库数（默认值为 100\ ）。</block>
   <block id="49d3d638c72a43de1071ccafc35ba79d" category="doc">同一卷上有多个数据库</block>
   <block id="4e23a71c353d487c1b39814259994b97" category="paragraph">您可以将所有数据库放在同一个卷上，因为备份策略可以选择设置每个备份的最大数据库数（默认值为 100 ）。</block>
@@ -7165,8 +7143,6 @@
   <block id="a121a292ca8a39c5591cdcc69d0f0ff8" category="paragraph"><block ref="a121a292ca8a39c5591cdcc69d0f0ff8" category="inline-link-macro-rx"></block></block>
   <block id="024d2125c4de994f5780d700157a8f8a" category="inline-link-macro">执行克隆生命周期</block>
   <block id="b5fb765366530fd4f75c7c5c651544bd" category="paragraph"><block ref="b5fb765366530fd4f75c7c5c651544bd" category="inline-link-macro-rx"></block></block>
-  <block id="68f8e37f5b3d7c3c6c34a481b33a736f" category="inline-link-macro">使用默认 tcp_timeout 值时，克隆操作可能会失败或需要较长时间才能完成</block>
-  <block id="5f2b3d8994098e5cded686a40b8bb7c9" category="paragraph"><block ref="5f2b3d8994098e5cded686a40b8bb7c9" category="inline-link-macro-rx"></block></block>
   <block id="60b2a4dd687e5b16ce91fc08c7273c8b" category="summary">您可以取消正在运行，已排队或无响应的备份操作。取消备份操作后，如果创建的备份未注册到 SnapCenter 服务器， SnapCenter 服务器将停止该操作并从存储中删除所有 Snapshot 副本。如果备份已注册到 SnapCenter 服务器，则即使在触发取消操作后，它也不会回滚已创建的 Snapshot 副本。</block>
   <block id="6895fc6b34ff814dd8d20f8eb70439e5" category="doc">取消适用于 Microsoft SQL Server 的 SnapCenter 插件备份操作</block>
   <block id="d15cddcc0f2911c53261943c85948fab" category="list-text">要取消还原操作，您必须以 SnapCenter 管理员或作业所有者的身份登录。</block>
@@ -7487,9 +7463,7 @@
   <block id="8a2bd81e968aaadb6ec10a1b58f541cc" category="inline-link-macro">备份 SQL Server 数据库，实例或可用性组</block>
   <block id="38c78702a48e457f5ef291281168432e" category="paragraph"><block ref="38c78702a48e457f5ef291281168432e" category="inline-link-macro-rx"></block></block>
   <block id="f9db2c2c51ac713541e90ff79219156d" category="paragraph"><block ref="f9db2c2c51ac713541e90ff79219156d" category="inline-link-macro-rx"></block></block>
-  <block id="f7e7f0dd9d36aec3d609775de2dbbd0b" category="paragraph"><block ref="f7e7f0dd9d36aec3d609775de2dbbd0b" category="inline-link-rx"></block></block>
   <block id="1e9ab426973a56020f8d1db85cb07f06" category="inline-link">故障转移集群实例数据库克隆失败</block>
-  <block id="2df5362c7aa8c12a0dd2f1b211cdf61d" category="paragraph"><block ref="2df5362c7aa8c12a0dd2f1b211cdf61d" category="inline-link-rx"></block></block>
   <block id="9e8da765ee75f7782977c25a6321dadb" category="summary">通过将数据从 SnapManager for Microsoft SQL Server 导入到 SnapCenter ，您可以继续使用先前版本中的数据。您只能将使用 SnapVault 技术归档的备份从 SnapManager for Microsoft SQL Server 导入到 SnapCenter 。</block>
   <block id="1775c206d933e72952320bc9c39e56a4" category="doc">导入归档备份概述</block>
   <block id="4311a9aa7335c4d3eaea1abc109915e9" category="summary">在使用适用于 Microsoft Windows 的 SnapCenter 插件配置 NetApp 存储系统后，您可以使用 SnapCenter 图形用户界面（图形用户界面）或 PowerShell cmdlet 将资源迁移到 NetApp 存储系统，或者从一个 NetApp LUN 迁移到另一个 NetApp LUN 。</block>
@@ -7804,4 +7778,24 @@ NetApp®Single Mailbox Recovery已于2023年5月12日终止提供(EOA)。在支�
   <block id="86ea794e2d7fcff39be7476200e06b51" category="paragraph">有关详细信息、请参见<block ref="a62945bfb4dadbe324d9f8ad560f4a1c" category="inline-link-rx"></block>视频。</block>
   <block id="34d41de6bbbd59c588068d1c2b2e073d" category="paragraph">您还可以为 VMware vSphere 的SnapCenter插件部署 CA 证书。有关更多信息，请参阅<block ref="bdfc8d677279c2d2dc7a5041c41cc2d9" category="inline-link-rx"></block> 。</block>
   <block id="2af0fc8c21c11cf5ed04e0063f53931e" category="paragraph"><block ref="2af0fc8c21c11cf5ed04e0063f53931e" category="inline-link-rx"></block></block>
+  <block id="92f7e9adcc0061bde4c2abd78f00e01e" category="paragraph">要使用 SnapCenter Plug-in for VMware vSphere 配置 CA 证书，请参见<block ref="e0ef04da7ad7ee6e29cb49ed5497582e" category="inline-link-rx"></block>。</block>
+  <block id="1e70ac4737c2e839c6fd901789e3bafb" category="paragraph">共享磁盘不是使用 Plug-in for Windows 创建的。您应该创建共享 LUN，然后将其添加到集群中的每个虚拟机。</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="section-title">相关信息</block>
+  <block id="ae0aa1a81eb18e69d5fc662eaee0efd5" category="inline-link">Broadcom 技术文档</block>
+  <block id="e3b8e6a8b23425a59add498ed0e47659" category="paragraph">请参阅<block ref="94f03a61d7283013b50d8cc8e88c9fd8" category="inline-link-rx"></block>并搜索有关跨物理主机群集虚拟机以及为 Microsoft 群集创建共享 FC RDM LUN 的文档。</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a5e2857bcbb24beb61afacbeb1096de4" category="paragraph"><block ref="a5e2857bcbb24beb61afacbeb1096de4" category="inline-link-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="78aa1e0fed76ce2fb3ad8dbadc39597f" category="paragraph"><block ref="78aa1e0fed76ce2fb3ad8dbadc39597f" category="inline-link-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="0e1f903c24e742b2c05ca97512d816a8" category="paragraph"><block ref="0e1f903c24e742b2c05ca97512d816a8" category="inline-link-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="66011001e458ee6a7572488743ab37f6" category="paragraph"><block ref="66011001e458ee6a7572488743ab37f6" category="inline-link-rx"></block></block>
+  <block id="5027ef7cc504e9bcee4f891f9e56ef89" category="paragraph"><block ref="5027ef7cc504e9bcee4f891f9e56ef89" category="inline-link-rx"></block></block>
+  <block id="6b77b088a166c6def22b47133c882582" category="paragraph">NetApp 还提供 MySQL、MAXDB、DB2、SYBASE、DPGLUE、MongoDB、ORASCPM 和 PostgreSQL 自定义插件。</block>
+  <block id="9ef736e00e9830a4ee825444862d9685" category="paragraph">如果要管理 MySQL 或 DB2 应用程序，可以使用 NetApp 提供的 MySQL 和 DB2 自定义插件。</block>
+  <block id="fb322b1c90de9bc9209933a55dc7c3a1" category="paragraph"><block ref="fb322b1c90de9bc9209933a55dc7c3a1" category="inline-link-rx"></block></block>
+  <block id="76d78c694f90915981830809ea4ed0ea" category="paragraph"><block ref="76d78c694f90915981830809ea4ed0ea" category="inline-link-rx"></block></block>
+  <block id="654bb6446b6bf43b65f5a763bbc17afe" category="paragraph"><block ref="654bb6446b6bf43b65f5a763bbc17afe" category="inline-link-rx"></block></block>
+  <block id="79cfb9f00fa8ea603f631e679e453fad" category="paragraph">有关卸载 SnapCenter Plug-in for VMware vSphere 的信息，请参见<block ref="cae8a6db54fa4da6d80207fee61e78d1" category="inline-link-rx"></block>。</block>
 </blocks>

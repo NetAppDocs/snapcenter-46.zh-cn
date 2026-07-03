@@ -11,7 +11,7 @@ entries:
   - title: 适用于 Oracle 数据库的插件支持的存储类型
     url: "/protect-sco/reference_storage_types_supported_by_snapcenter_plug_in_for_oracle_database.html"
   - title: 为适用于 Oracle 的插件的 SnapMirror 和 SnapVault 复制准备存储系统
-    url: "/protect-sco/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_oracle.html"
+    url: "/protect-sco/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plug-in_for_oracle.html"
   - title: 适用于 Oracle 的插件所需的最低 ONTAP 特权
     url: "/protect-sco/reference_minimum_ontap_privileges_required_for_oracle_plug_in.html"
 - title: 安装适用于 Oracle 数据库的 SnapCenter 插件

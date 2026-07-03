@@ -9,7 +9,7 @@ entries:
 - title: REST Web 服务基础
   url: "/sc-automation/concept_rest_web_services_foundation.html"
 - title: 基本操作特征
-  url: "/sc-automation/concept_basic_operational_characterstics.html"
+  url: "/sc-automation/concept_basic_operational_characteristics.html"
 - title: 控制 API 请求的输入变量
   url: "/sc-automation/concept_input_variables_controlling_an_api_request.html"
 - title: API 响应的解释
@@ -19,7 +19,7 @@ entries:
   - title: 其他插件支持的 REST API 工作流
     url: "/sc-automation/reference_supported_rest_apis.html"
   - title: Oracle 数据库支持的 REST API
-    url: "/sc-automation/refrence_rest_apis_supported_for_oracle_database.html"
+    url: "/sc-automation/reference_rest_apis_supported_for_oracle_database.html"
   - title: 支持 REST API 用于 SnapCenter 服务器的灾难恢复
     url: "/sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.html"
 - title: 如何使用 Swagger API 网页访问 REST API

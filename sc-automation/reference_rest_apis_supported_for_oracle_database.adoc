@@ -1,5 +1,5 @@
 ---
-permalink: sc-automation/refrence_rest_apis_supported_for_oracle_database.html 
+permalink: sc-automation/reference_rest_apis_supported_for_oracle_database.html 
 sidebar: sidebar 
 keywords: REST APIs, oracle database 
 summary: 介绍 Oracle 数据库支持的 REST API 工作流 
