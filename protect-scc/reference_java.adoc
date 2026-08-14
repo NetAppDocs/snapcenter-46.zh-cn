@@ -15,6 +15,7 @@ Java 自定义插件直接与数据库，实例等应用程序交互。
 
 
 
+[[limitations]]
 == 限制
 
 在使用 Java 编程语言开发插件时，您应注意一些限制。
@@ -59,12 +60,14 @@ Java 自定义插件直接与数据库，实例等应用程序交互。
 |===
 
 
+[[reason-for-java-limitations]]
 === Java 限制的原因
 
 SnapCenter 代理的目标是确保持续，安全且稳定可靠的应用程序集成。通过支持 Java 插件，插件可能会导致内存泄漏和其他不需要的问题。这些问题很难解决，尤其是在目标是让事情简单易用的情况下。如果插件的复杂性不是太复杂，开发人员可能会出现错误的可能性就会小得多。Java 插件的风险在于，它们与 SnapCenter 代理本身在同一 JVM 中运行。当插件崩溃或内存泄漏时，它也可能对代理产生负面影响。
 
 
 
+[[supported-methods]]
 == 支持的方法
 
 |===
@@ -171,12 +174,14 @@ clonePost
 |===
 
 
+[[tutorial]]
 == 教程
 
 本节介绍如何使用 Java 编程语言创建自定义插件。
 
 
 
+[[setting-up-eclipse]]
 === 设置 Eclipse
 
 . 在 Eclipse 中创建一个新的 Java 项目 "TuttorialPlug"
@@ -236,6 +241,7 @@ public class TutorialPlugin extends AbstractPlugin {
 
 
 
+[[implementing-the-required-methods]]
 === 实施所需的方法
 
 暂停，取消静默和版本是每个自定义 Java 插件必须实施的强制方法。
@@ -282,6 +288,7 @@ logger.info("Successfully handled application");
 
 
 
+[[using-result-object]]
 === 正在使用结果对象
 
 result 对象包含以下参数：
@@ -355,6 +362,7 @@ Result result = Result.builder()
 ....
 
 
+[[versionresult]]
 === 版本结果
 
 VersionResult 会向 SnapCenter 服务器通知插件版本。由于它还会从结果继承，因此它包含 config ， exitCode ， stdout ， stderr 和 messages 参数。
@@ -410,6 +418,7 @@ VersionResult result = VersionResult.builder()
 ....
 
 
+[[using-the-context-object]]
 === 使用上下文对象
 
 上下文对象提供了以下方法：
@@ -433,12 +442,14 @@ config getconfig（ ）；
 |===
 
 
+[[workflow-id]]
 === 工作流 ID
 
 工作流 ID 是 SnapCenter 服务器用于引用特定正在运行的工作流的 ID 。
 
 
 
+[[config]]
 === 配置
 
 此对象包含（大多数）用户可在 SnapCenter 服务器的配置中设置的参数。但是，由于安全原因，其中某些参数可能会在服务器端进行筛选。以下是有关如何访问 Config 并检索参数的示例：
@@ -452,6 +463,7 @@ config.getParameter("PLUGIN_MANDATORY_PARAMETER");
 
 
 
+[[exporting-the-plug-in]]
 === 导出插件
 
 要在 SnapCenter 主机上安装此插件，必须导出此插件。

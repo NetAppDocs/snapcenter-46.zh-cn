@@ -12,12 +12,14 @@ summary: 可以使用 SnapCenter 服务器将创建的自定义插件安装在�
 
 
 
+[[custom-plug-in-in-snapcenter]]
 == SnapCenter 中的自定义插件
 
 可以使用 SnapCenter 服务器将使用 Java ， Perl 或原生模式创建的自定义插件安装在主机上，以便为应用程序启用数据保护。您必须已导出此插件，才能使用本教程中提供的操作步骤将其安装到 SnapCenter 主机上。
 
 
 
+[[creating-a-plug-in-description-file]]
 === 创建插件问题描述文件
 
 对于创建的每个插件，您都必须具有一个问题描述文件。问题描述文件介绍了此插件的详细信息。文件名必须为 Plugin_Descriptioner.xml 。
@@ -145,6 +147,7 @@ RequireFileSystemClone
 ....
 
 
+[[creating-a-zip-file]]
 === 创建 ZIP 文件
 
 开发插件并创建描述符文件后，必须将插件文件和 Plugin_descriptor.xml 文件添加到文件夹中并将其压缩。
@@ -165,6 +168,7 @@ RequireFileSystemClone
 
 
 
+[[uploading-the-plug-in-zip-file]]
 === 上传插件 ZIP 文件
 
 您必须将此插件 ZIP 文件上传到 SnapCenter 服务器，才能在所需主机上部署此插件。
@@ -192,6 +196,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["《 SnapCenter �
 
 
 
+[[deploying-the-custom-plug-ins]]
 === 部署自定义插件
 
 现在，在 * 添加 * 和 * 修改主机 * 工作流中，可以在所需主机上部署上传的自定义插件。您可以将多个版本的插件上传到 SnapCenter 服务器，并且可以选择要在特定主机上部署的所需版本。

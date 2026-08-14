@@ -58,6 +58,7 @@ NOTE: 对于电子邮件通知，您必须已使用 GUI 或 PowerShell 命令 se
 
 
 
+[[split-an-application-volume-clone]]
 == 拆分应用程序卷克隆
 
 您可以使用 SnapCenter 从父资源拆分克隆的资源。拆分的克隆将独立于父资源。
@@ -73,6 +74,7 @@ NOTE: 对于电子邮件通知，您必须已使用 GUI 或 PowerShell 命令 se
 
 
 
+[[delete-an-application-volume-clone]]
 == 删除应用程序卷克隆
 
 如果您发现克隆不再需要，可以将其删除。您不能删除与其他克隆的源类似的克隆。

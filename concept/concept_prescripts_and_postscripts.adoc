@@ -15,6 +15,7 @@ summary: 您可以在数据保护操作中使用自定义预处理和后处理�
 
 
 
+[[supported-script-types]]
 == 支持的脚本类型
 
 Windows支持以下类型的脚本：
@@ -37,6 +38,7 @@ NOTE: 除了默认的bash shell之外、还支持其他shell、例如sh-shell、
 
 
 
+[[script-path]]
 == 脚本路径
 
 在非虚拟化存储系统和虚拟化存储系统上，作为 SnapCenter 操作一部分运行的所有预处理和后处理脚本都会在插件主机上执行。
@@ -50,6 +52,7 @@ NOTE: 脚本路径会在执行时进行验证。
 
 
 
+[[where-to-specify-scripts]]
 == 指定脚本的位置
 
 脚本在备份策略中指定。启动备份作业后，策略会自动将脚本与要备份的资源关联起来。创建备份策略时，您可以指定 prestpt 和 postScript 参数。
@@ -61,6 +64,7 @@ NOTE: 对于UNIX、不能指定多个脚本。
 
 
 
+[[script-timeouts]]
 == 脚本超时
 
 对于Windows、超时设置为15分钟、无法修改。
@@ -69,6 +73,7 @@ NOTE: 对于UNIX、不能指定多个脚本。
 
 
 
+[[script-output]]
 == 脚本输出
 
 Windows预处理和后处理脚本输出文件的默认目录为Windows\System32。

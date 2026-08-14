@@ -28,6 +28,7 @@ NOTE: 如果选择非 NetApp LUN ，已损坏的数据库或正在还原的数�
 
 
 
+[[how-snapcenter-backs-up-databases]]
 == SnapCenter 如何备份数据库
 
 SnapCenter 使用 Snapshot 副本技术备份 LUN 或 VMDK 上的 SQL Server 数据库。SnapCenter 通过创建数据库的 Snapshot 副本来创建备份。

@@ -25,6 +25,7 @@ summary: 如果不再希望使用 SnapCenter 管理主机的数据保护作业�
 
 
 
+[[prerequisites-to-remove-a-host-using-role-based-access-control]]
 == 使用基于角色的访问控制删除主机的前提条件
 
 * 您应已使用具有读取，删除主机，安装，卸载插件和删除对象权限的 RBAC 角色登录。
@@ -38,6 +39,7 @@ summary: 如果不再希望使用 SnapCenter 管理主机的数据保护作业�
 
 
 
+[[prerequisites-to-remove-a-host-with-clones-created-from-clone-lifecycle-operation]]
 == 删除具有从克隆生命周期操作创建的克隆的主机的前提条件
 
 * 您应已使用 SQL 数据库的克隆生命周期管理创建克隆作业。

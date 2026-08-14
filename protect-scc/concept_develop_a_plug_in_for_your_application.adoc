@@ -25,6 +25,7 @@ summary: 通过 SnapCenter 服务器，您可以将应用程序作为 SnapCenter
 
 
 
+[[generic-plug-in-handling-in-all-api-calls]]
 == 所有 API 调用中的通用插件处理
 
 [role="lead"]
@@ -38,6 +39,7 @@ summary: 通过 SnapCenter 服务器，您可以将应用程序作为 SnapCenter
 
 
 
+[[use-plug-in-parameters]]
 === 使用插件参数
 
 在每次进行 API 调用时，都会向插件传递一组参数。下表列出了参数的特定信息。
@@ -98,6 +100,7 @@ app_ignore_error
 |===
 
 
+[[use-exit-codes]]
 === 使用退出代码
 
 此插件通过退出代码将操作状态返回给主机。每个代码都有一个特定的含义，此插件使用正确的退出代码来指示相同的含义。
@@ -144,6 +147,7 @@ app_ignore_error
 |===
 
 
+[[log-error-messages]]
 === 记录错误消息
 
 错误消息将从插件传递到 SnapCenter 服务器。此消息包括消息，日志级别和时间戳。
@@ -190,6 +194,7 @@ error
 |===
 
 
+[[preserve-data-consistency]]
 === 保持数据一致性
 
 自定义插件可在执行相同工作流的操作之间保留数据。例如，插件可以在暂停结束时存储数据，可在取消静默操作期间使用。

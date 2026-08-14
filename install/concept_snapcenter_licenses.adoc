@@ -102,6 +102,7 @@ NOTE: SnapCenter 高级版和 SnapCenter NAS 文件服务许可证已弃用，�
 
 
 
+[[single-mailbox-recovery-smbr-licenses]]
 == 单邮箱恢复（ SMBR ）许可证
 
 如果您使用适用于 Exchange 的 SnapCenter 插件管理 Microsoft Exchange Server 数据库和单邮箱恢复（ SMBR ），则需要为 SMBR 提供额外的许可证，此许可证需要根据用户邮箱单独购买。

@@ -15,6 +15,7 @@ summary: 提供有关安装 SnapCenter 服务器和适用于 Microsoft SQL Serve
 
 
 
+[[prepare-for-installation]]
 == 准备安装
 
 * 域和工作组要求 *
@@ -200,6 +201,7 @@ ONTAP 集群或 SVM 通信端口
 
 
 
+[[install-snapcenter-server]]
 == 安装 SnapCenter 服务器
 
 * 下载并安装 SnapCenter Server*
@@ -283,6 +285,7 @@ NOTE: 自定义安装路径不支持特殊字符 "%" 。如果在路径中包含
 
 
 
+[[install-the-plug-in-for-microsoft-sql-server]]
 == 安装适用于 Microsoft SQL Server 的插件
 
 * 设置运行身份凭据以安装适用于 Microsoft SQL Server* 的插件

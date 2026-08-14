@@ -18,6 +18,7 @@ NOTE: 您无法恢复手动添加的自定义插件资源。
 
 
 
+[[complete-resource-restore]]
 == 完成资源还原
 
 * 还原资源的所有卷， qtree 和 LUN
@@ -28,6 +29,7 @@ NOTE: 如果资源包含卷或 qtree ，则在这些卷或 qtree 上选择要还
 
 
 
+[[file-level-restore]]
 == 文件级还原
 
 * 从卷， qtree 或目录还原文件

@@ -15,6 +15,7 @@ summary: 通过 SnapCenter 基于角色的访问控制（ Role-Based Access Cont
 
 
 
+[[snapcenter-roles]]
 == SnapCenter 角色
 
 SnapCenter 附带以下预定义角色。您可以将用户和组分配给这些角色，也可以创建新角色。
@@ -29,6 +30,7 @@ SnapCenter 附带以下预定义角色。您可以将用户和组分配给这些
 
 
 
+[[snapcenter-plug-in-for-vmware-vsphere-roles]]
 == 适用于 VMware vSphere 的 SnapCenter 插件角色
 
 为了管理 VM ， VMDK 和数据存储库的 VM 一致数据保护，适用于 VMware vSphere 的 SnapCenter 插件会在 vCenter 中创建以下角色：
@@ -49,6 +51,7 @@ SnapCenter 附带以下预定义角色。您可以将用户和组分配给这些
 |===
 
 
+[[snapcenter-permissions]]
 == SnapCenter 权限
 
 SnapCenter 提供以下权限：

@@ -97,6 +97,7 @@ SnapCenter 的高可用性使用外部负载平衡器（ F5 ）进行设置。�
 
 
 
+[[snapcenter-architecture]]
 == SnapCenter 架构
 
 SnapCenter 平台基于多层架构，其中包括一个集中式管理服务器（ SnapCenter 服务器）和一个 SnapCenter 插件主机。
@@ -107,6 +108,7 @@ image::../media/snapcenter_architecture.gif[SnapCenter 架构]
 
 
 
+[[snapcenter-components]]
 == SnapCenter 组件
 
 SnapCenter 由 SnapCenter 服务器和 SnapCenter 插件组成。您应仅安装适用于要保护的数据的插件。
@@ -148,6 +150,7 @@ NOTE: 适用于 UNIX 的 SnapCenter 插件不是独立插件，不能单独安�
 
 
 
+[[snapcenter-server]]
 == SnapCenter 服务器
 
 SnapCenter 服务器包括一个 Web 服务器，一个基于 HTML5 的集中式用户界面， PowerShell cmdlet ， REST API 和 SnapCenter 存储库。
@@ -172,6 +175,7 @@ SnapCenter 服务器和插件使用 HTTPS 与主机代理进行通信。
 
 
 
+[[snapcenter-plug-ins]]
 == SnapCenter 插件
 
 每个 SnapCenter 插件都支持特定环境，数据库和应用程序。
@@ -262,6 +266,7 @@ NOTE: 适用于 VMware vSphere 的 SnapCenter 插件支持对虚拟机（ VM ）
 
 
 
+[[snapcenter-plug-in-for-microsoft-sql-server-features]]
 === 适用于 Microsoft SQL Server 的 SnapCenter 插件功能
 
 * 自动对 SnapCenter 环境中的 Microsoft SQL Server 数据库执行应用程序感知备份，还原和克隆操作。
@@ -272,6 +277,7 @@ NOTE: 适用于 VMware vSphere 的 SnapCenter 插件支持对虚拟机（ VM ）
 
 
 
+[[snapcenter-plug-in-for-microsoft-windows-features]]
 === 适用于 Microsoft Windows 的 SnapCenter 插件功能
 
 * 为 SnapCenter 环境中 Windows 主机上运行的其他插件启用应用程序感知型数据保护
@@ -285,6 +291,7 @@ NOTE: 适用于 Windows 的插件在物理和 RDM LUN 上配置 SMB 共享和 Wi
 
 
 
+[[snapcenter-plug-in-for-microsoft-exchange-server-features]]
 === 适用于 Microsoft Exchange Server 的 SnapCenter 插件功能
 
 * 为 SnapCenter 环境中的 Microsoft Exchange Server 数据库和数据库可用性组（ DAG ）自动执行应用程序感知型备份和还原操作
@@ -293,6 +300,7 @@ NOTE: 适用于 Windows 的插件在物理和 RDM LUN 上配置 SMB 共享和 Wi
 
 
 
+[[snapcenter-plug-in-for-oracle-database-features]]
 === 适用于 Oracle 数据库的 SnapCenter 插件功能
 
 * 自动执行应用程序感知型备份，还原，恢复，验证，挂载， 在 SnapCenter 环境中卸载和克隆 Oracle 数据库的操作
@@ -301,6 +309,7 @@ NOTE: 适用于 Windows 的插件在物理和 RDM LUN 上配置 SMB 共享和 Wi
 
 
 
+[[snapcenter-plug-in-for-unix-features]]
 === 适用于 UNIX 的 SnapCenter 插件功能
 
 * 允许适用于 Oracle 数据库的插件通过处理 Linux 或 AIX 系统上的底层主机存储堆栈在 Oracle 数据库上执行数据保护操作
@@ -315,6 +324,7 @@ NOTE: 适用于 Windows 的插件在物理和 RDM LUN 上配置 SMB 共享和 Wi
 
 
 
+[[snapcenter-plug-in-for-sap-hana-database-features]]
 === 适用于 SAP HANA 数据库的 SnapCenter 插件功能
 
 * 自动对 SnapCenter 环境中的 SAP HANA 数据库进行应用程序感知型备份，还原和克隆
@@ -322,6 +332,7 @@ NOTE: 适用于 Windows 的插件在物理和 RDM LUN 上配置 SMB 共享和 Wi
 
 
 
+[[snapcenter-custom-plug-ins-features]]
 === SnapCenter 自定义插件功能
 
 * 支持自定义插件来管理其他 SnapCenter 插件不支持的应用程序或数据库。自定义插件不会在 SnapCenter 安装过程中提供。
@@ -338,6 +349,7 @@ NetApp 支持创建和使用自定义插件的功能；但是， NetApp 不支�
 
 
 
+[[snapcenter-repository]]
 == SnapCenter 存储库
 
 SnapCenter 存储库有时称为 NSM 数据库，用于存储每个 SnapCenter 操作的信息和元数据。

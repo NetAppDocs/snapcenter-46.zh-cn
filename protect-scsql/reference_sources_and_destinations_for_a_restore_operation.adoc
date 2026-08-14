@@ -15,12 +15,14 @@ summary: 您可以从主存储或二级存储上的备份副本还原 SQL Server
 
 
 
+[[sources-for-a-restore-operation]]
 == 还原操作的源
 
 您可以从主存储或二级存储还原数据库。
 
 
 
+[[destinations-for-a-restore-operation]]
 == 还原操作的目标
 
 您可以将数据库还原到各种目标：

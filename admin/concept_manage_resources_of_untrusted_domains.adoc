@@ -19,6 +19,7 @@ summary: 除了管理 Active Directory \ （ AD\ ）受信任域中的主机之�
 
 
 
+[[modify-untrusted-domains]]
 == 修改不可信域
 
 如果要更新域控制器 IP 地址或完全限定域名（ FQDN ），则可以修改不受信任的域。
@@ -58,6 +59,7 @@ summary: 除了管理 Active Directory \ （ AD\ ）受信任域中的主机之�
 
 
 
+[[unregister-untrusted-active-directory-domains]]
 == 取消注册不可信的 Active Directory 域
 
 如果您不想使用与不可信的 Active Directory 域关联的资产，则可以取消注册该域。

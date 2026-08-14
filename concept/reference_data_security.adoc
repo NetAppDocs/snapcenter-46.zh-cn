@@ -30,6 +30,7 @@ SnapCenter 包括以下安全功能：
 
 
 
+[[ca-certificate-overview]]
 == CA 证书概述
 
 SnapCenter 服务器安装程序可在安装期间启用集中式 SSL 证书支持。为了增强服务器和插件之间的安全通信， SnapCenter 支持使用客户提供的授权 CA 证书。

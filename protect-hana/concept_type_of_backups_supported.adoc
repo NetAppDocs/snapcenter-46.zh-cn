@@ -15,12 +15,14 @@ summary: 备份类型指定要创建的备份类型。SnapCenter 支持 SAP HANA
 
 
 
+[[file-based-backup]]
 == File-Based 备份
 
 基于文件的备份可验证数据库的完整性。您可以计划按特定间隔执行基于文件的备份操作。仅备份活动租户。您不能从 SnapCenter 还原和克隆基于文件的备份。
 
 
 
+[[snapshot-copy-based-backup]]
 == 基于 Snapshot 副本的备份
 
 基于 Snapshot 副本的备份利用 NetApp Snapshot 副本技术为 SAP HANA 数据库所在的卷创建联机只读副本。

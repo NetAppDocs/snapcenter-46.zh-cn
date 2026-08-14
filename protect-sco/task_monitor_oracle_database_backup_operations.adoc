@@ -51,6 +51,7 @@ NOTE: 但会显示备份作业状态image:../media/success_icon.gif["已完成�
 
 
 
+[[monitor-data-protection-operations-in-the-activity-pane]]
 == 在活动窗格中监控数据保护操作
 
 [role="lead"]

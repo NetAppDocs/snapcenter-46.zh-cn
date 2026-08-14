@@ -18,6 +18,7 @@ NOTE: 在 FlexASM 设置中，如果基数小于 RAC 集群中的节点数，则
 
 
 
+[[mount-a-database-backup]]
 == 挂载数据库备份
 
 如果要访问备份中的文件，应手动挂载数据库备份。
@@ -84,6 +85,7 @@ NOTE: 有关如何编辑 asm_diskstring 参数的信息，请参见 https://kb.n
 
 
 
+[[unmount-a-database-backup]]
 == 卸载数据库备份
 
 如果您不想再访问已挂载数据库备份上的文件，可以手动卸载该备份。

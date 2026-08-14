@@ -17,6 +17,7 @@ LUN 是 SAN 配置中的基本存储单元。Windows 主机将系统上的 LUN �
 
 
 
+[[establish-an-iscsi-session]]
 == 建立 iSCSI 会话
 
 如果您使用 iSCSI 连接到 LUN ，则必须在创建 LUN 之前建立 iSCSI 会话以启用通信。
@@ -91,6 +92,7 @@ SnapCenter 将建立 iSCSI 会话。
 
 
 
+[[disconnect-an-iscsi-session]]
 == 断开 iSCSI 会话的连接
 
 有时，您可能需要将 iSCSI 会话与具有多个会话的目标断开连接。

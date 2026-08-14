@@ -123,6 +123,7 @@ _Set-AdfsRelyingPartyTrust -targetName‘<显示依赖方的名称>'-EncryptionC
 
 
 
+[[update-ad-fs-mfa-metadata]]
 == 更新AD FS MFA元数据
 
 只要对AD FS服务器进行了任何修改、例如升级、CA证书续订、灾难恢复等、您就应在SnapCenter 中更新AD FS MFA元数据。
@@ -143,6 +144,7 @@ _Set-SmMultiFactorAuthentication -Path < ADFS MFA元数据xml文件的位置>_
 
 
 
+[[update-snapcenter-mfa-metadata]]
 == 更新SnapCenter MFA元数据
 
 只要在ADFS服务器中进行任何修改、例如修复、CA证书续订、DR等、您就应更新AD FS中的SnapCenter MFA元数据。
@@ -170,6 +172,7 @@ _Set-SmMultiFactorAuthentication -Path < ADFS MFA元数据xml文件的位置>_
 
 
 
+[[disable-multi-factor-authentication-mfa]]
 == 禁用多因素身份验证(MFA)
 
 使用_set-SmMultiFactorAuthentication -Disable_ cmdlet禁用MFA并清理启用MFA时创建的配置文件。

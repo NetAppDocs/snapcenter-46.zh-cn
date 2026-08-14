@@ -15,6 +15,7 @@ Oracle 数据库使用 REST API 执行以下操作：
 
 
 
+[[credentials]]
 == 凭据
 
 * 向 SnapCenter 服务器注册凭据
@@ -26,6 +27,7 @@ Oracle 数据库使用 REST API 执行以下操作：
 
 
 
+[[host]]
 == 主机
 
 * 添加主机
@@ -35,6 +37,7 @@ Oracle 数据库使用 REST API 执行以下操作：
 
 
 
+[[plug-in]]
 == 插件
 
 * 在现有主机上安装插件
@@ -43,6 +46,7 @@ Oracle 数据库使用 REST API 执行以下操作：
 
 
 
+[[policy]]
 == 策略
 
 * 创建新策略
@@ -53,6 +57,7 @@ Oracle 数据库使用 REST API 执行以下操作：
 
 
 
+[[resource-groups]]
 == 资源组
 
 * 保护资源组
@@ -66,6 +71,7 @@ Oracle 数据库使用 REST API 执行以下操作：
 
 
 
+[[resources]]
 == Resources
 
 * 发现数据库
@@ -74,6 +80,7 @@ Oracle 数据库使用 REST API 执行以下操作：
 
 
 
+[[backups]]
 == 备份
 
 * 启动资源备份操作
@@ -85,6 +92,7 @@ Oracle 数据库使用 REST API 执行以下操作：
 
 
 
+[[restore]]
 == 还原
 
 * 还原备份
@@ -92,6 +100,7 @@ Oracle 数据库使用 REST API 执行以下操作：
 
 
 
+[[clone-refresh]]
 == 克隆刷新
 
 * 从指定备份创建 Oracle 数据库克隆规范
@@ -101,6 +110,7 @@ Oracle 数据库使用 REST API 执行以下操作：
 
 
 
+[[rbac]]
 == RBAC
 
 * 将资源分配给用户或组
@@ -109,6 +119,7 @@ Oracle 数据库使用 REST API 执行以下操作：
 
 
 
+[[configuration-settings]]
 == 配置设置
 
 * 检索和修改配置设置

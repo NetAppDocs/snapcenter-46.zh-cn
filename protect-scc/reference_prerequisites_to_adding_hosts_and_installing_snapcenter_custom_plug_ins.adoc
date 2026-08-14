@@ -25,12 +25,14 @@ link:concept_develop_a_plug_in_for_your_application.html["为您的应用程序�
 
 
 
+[[general]]
 == 常规
 
 如果使用的是 iSCSI ，则 iSCSI 服务必须正在运行。
 
 
 
+[[windows-hosts]]
 == Windows 主机
 
 * 您必须具有具有本地管理员权限的域用户，并在远程主机上具有本地登录权限。
@@ -39,6 +41,7 @@ link:concept_develop_a_plug_in_for_your_application.html["为您的应用程序�
 
 
 
+[[linux-hosts]]
 == Linux 主机
 
 * 您必须已为 root 用户或非 root 用户启用基于密码的 SSH 连接。

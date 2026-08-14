@@ -159,6 +159,7 @@ NOTE: 即使先前已将同一主机添加到 SnapCenter 并确认了指纹，�
 
 
 
+[[monitor-installation-status]]
 == 监控安装状态
 
 您可以使用作业页面监控 SnapCenter 插件软件包的安装进度。您可能需要检查安装进度以确定安装完成的时间或是否存在问题描述。

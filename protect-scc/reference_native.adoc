@@ -26,10 +26,12 @@ SnapCenter 支持使用非 Perl 编程或脚本语言来创建插件。这称为
 
 
 
+[[general-plug-in-handling]]
 == 常规插件处理
 
 
 
+[[logging-error-messages]]
 === 记录错误消息
 
 每个操作都可以将消息发送回服务器，服务器将显示和存储内容。消息包含消息级别，时间戳和消息文本。支持多行消息。
@@ -42,6 +44,7 @@ SC_MESSAGE#<level>#<timestamp>#<message>
 ....
 
 
+[[using-plug-in-stubs]]
 === 使用插件存根
 
 SnapCenter 插件必须实施插件存根。这些方法是 SnapCenter 服务器根据特定工作流调用的。
@@ -105,6 +108,7 @@ restore_pre
 |===
 
 
+[[examples]]
 === 示例
 
 

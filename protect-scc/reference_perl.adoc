@@ -32,10 +32,12 @@ summary: 使用 Perl 开发此插件。
 
 
 
+[[general-plug-in-handling]]
 == 常规插件处理
 
 
 
+[[using-results-object]]
 === 使用 Results 对象
 
 每个自定义插件操作都必须定义结果对象。此对象会将消息，退出代码， stdout 和 stderr 发送回主机代理。
@@ -54,6 +56,7 @@ Results 对象：
  return $result;
 
 
+[[preserving-data-consistency]]
 === 保持数据一致性
 
 在执行同一工作流期间，可以在操作之间保留数据（清理除外）。这可通过密钥值对来实现。关键值数据对作为结果对象的一部分进行设置，并在同一工作流的后续操作中保留和使用。
@@ -103,6 +106,7 @@ $msgObj->collect(\@message_a, TRACE, "My TRACE Message");
  $result->{message} = \@message_a;
 
 
+[[using-plug-in-stubs]]
 === 使用插件存根
 
 自定义插件必须公开插件存根。这些方法是 SnapCenter 服务器根据工作流调用的。
@@ -232,6 +236,7 @@ SnapCenter 使用此存根来获取此插件管理的应用程序版本详细信
 |===
 
 
+[[plug-in-package-information]]
 === 插件软件包信息
 
 每个插件都必须具有以下信息：
@@ -258,6 +263,7 @@ my %config_h = ();
 ....
 
 
+[[operations]]
 === 操作
 
 您可以对自定义插件支持的各种操作进行编码，例如 setenv ， Version ， Quiesce 和 Unquiesce 。

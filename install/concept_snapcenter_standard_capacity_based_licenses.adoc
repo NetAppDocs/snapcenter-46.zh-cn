@@ -31,12 +31,14 @@ summary: 您可以使用 SnapCenter 标准容量许可证来保护 ONTAP Select 
 
 
 
+[[prerequisites-to-add-capacity-based-license]]
 == 添加基于容量的许可证的前提条件
 
 在添加基于容量的许可证之前，您应计算容量要求，检索基于容量的许可证的序列号，并可选择生成许可证文件。
 
 
 
+[[calculate-capacity-requirements]]
 === 计算容量需求
 
 在获取基于 SnapCenter 容量的许可证之前，您应计算要由 SnapCenter 管理的主机上的容量。
@@ -72,6 +74,7 @@ VS1     Marketing    2.62TB
 
 
 
+[[retrieve-the-serial-number-of-capacity-based-license]]
 === 检索基于容量的许可证的序列号
 
 您的订单确认函或文档包中提供了基于 SnapCenter 容量的许可证序列号；但是，如果您没有此序列号，则可以从 NetApp 支持站点检索此序列号。
@@ -95,6 +98,7 @@ image::../media/nss_license_selection.gif[选择 NSS 许可证]
 
 
 
+[[generate-a-netapp-license-file]]
 === 生成 NetApp 许可证文件
 
 如果您不想在 SnapCenter 图形用户界面中输入 NetApp 支持站点凭据和 SnapCenter 许可证序列号，或者您无法从 SnapCenter 访问 NetApp 支持站点的 Internet ，则可以生成 NetApp 许可证文件（ NLF ）， 然后，将文件下载并存储在可从 SnapCenter 主机访问的位置。
@@ -118,6 +122,7 @@ image::../media/nss_license_selection.gif[选择 NSS 许可证]
 
 
 
+[[add-capacity-based-license]]
 == 添加基于容量的许可证
 
 如果您将 SnapCenter 与 ONTAP Select 或 Cloud Volumes ONTAP 平台结合使用，则应安装一个或多个基于 SnapCenter 容量的许可证。
@@ -219,6 +224,7 @@ NetApp 许可证文件
 
 
 
+[[how-snapcenter-calculates-capacity-usage]]
 === SnapCenter 如何计算容量使用量
 
 SnapCenter 每天午夜自动计算其管理的 ONTAP Select 和 Cloud Volumes ONTAP 存储的容量使用量。为了确保 SnapCenter 配置正确，您应了解 SnapCenter 如何计算容量。

@@ -28,10 +28,12 @@ SnapCenter 使用以下类型的基于角色的访问控制：
 
 
 
+[[snapcenter-rbac]]
 == SnapCenter RBAC
 
 
 
+[[roles-and-permissions]]
 === 角色和权限
 
 SnapCenter 附带的预定义角色已分配权限。您可以将用户或用户组分配给这些角色。您还可以创建新角色并管理权限和用户。
@@ -47,12 +49,14 @@ NOTE: 如果创建自定义角色，则该角色必须包含 SnapCenter 管理�
 
 
 
+[[authentication]]
 === 身份验证
 
 用户需要在登录期间通过图形用户界面（ GUI ）或 PowerShell cmdlet 提供身份验证。如果用户是多个角色的成员，则在输入登录凭据后，系统会提示用户指定要使用的角色。用户还需要提供身份验证才能运行 API 。
 
 
 
+[[application-level-rbac]]
 == 应用程序级 RBAC
 
 SnapCenter 使用凭据验证授权的 SnapCenter 用户是否也具有应用程序级别的权限。
@@ -63,6 +67,7 @@ SnapCenter 使用凭据验证授权的 SnapCenter 用户是否也具有应用程
 
 
 
+[[snapcenter-plug-in-for-vmware-vsphere-rbac]]
 == 适用于 VMware vSphere RBAC 的 SnapCenter 插件
 
 如果您使用 SnapCenter VMware 插件进行 VM 一致的数据保护，则 vCenter Server 可提供额外级别的 RBAC 。SnapCenter VMware 插件既支持 vCenter Server RBAC ，又支持 Data ONTAP RBAC 。
@@ -71,6 +76,7 @@ SnapCenter 使用凭据验证授权的 SnapCenter 用户是否也具有应用程
 
 
 
+[[ontap-permissions]]
 == ONTAP 权限
 
 您应创建具有访问存储系统所需权限的 vsadmin 帐户。

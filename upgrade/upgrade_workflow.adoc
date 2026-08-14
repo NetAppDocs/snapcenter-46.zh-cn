@@ -19,6 +19,7 @@ image::../media/upgrade_workflow.png[升级工作流]
 
 
 
+[[supported-upgrade-paths]]
 == 支持的升级路径
 
 |===
@@ -60,9 +61,22 @@ image::../media/upgrade_workflow.png[升级工作流]
 * 4.6.x
 
 
+
+
+ a| 
+4.6.x
+ a| 
+4.7
+ a| 
+* 4.6.x
+* 4.7
+
+
 |===
+[NOTE]
+====
+* SnapCenter 仅支持沿上表中显示的路径进行直接升级。如果需要升级到当前版本不直接支持的版本，则必须执行一系列增量升级。例如，如果您使用的是 SnapCenter 版本 4.3.x 并希望升级到 4.6.x，则应首先升级到 4.5.x，然后进行滚动升级到 4.6.x。此方法可确保版本之间的兼容性，并防止跳过中间版本时可能发生的问题。在开始升级之前，请始终验证表中支持的升级路径。
+* 有关升级 SnapCenter Plug-in for VMware vSphere 的信息，请参见 link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html["升级适用于 VMware vSphere 的 SnapCenter 插件"^]
 
-IMPORTANT: 例如、如果您使用的是SnapCenter 4.3.x版、并希望升级到4.6.x、则应先升级到4.5.x、然后再滚动升级到4.6.x
 
-
-NOTE: 有关升级适用于 VMware vSphere 的 SnapCenter 插件的信息，请参见 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html["升级适用于 VMware vSphere 的 SnapCenter 插件"^]。
+====

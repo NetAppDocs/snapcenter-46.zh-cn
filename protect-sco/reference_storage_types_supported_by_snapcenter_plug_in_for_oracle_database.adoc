@@ -17,6 +17,7 @@ SnapCenter 不支持为 Linux 和 AIX 配置存储。
 
 
 
+[[storage-types-supported-on-linux]]
 == Linux 支持的存储类型
 
 下表列出了 Linux 支持的存储类型。
@@ -50,6 +51,7 @@ VMware ESXi
 |===
 
 
+[[storage-types-supported-on-aix]]
 == AIX 支持的存储类型
 
 下表列出了 AIX 支持的存储类型。

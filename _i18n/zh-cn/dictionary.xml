@@ -373,9 +373,7 @@
   <block id="fef826a349ca99b933042ba1dfa73260" category="cell">4.4.x</block>
   <block id="4b1f6cbbab8f5d76a3e1d1b2c562722e" category="cell">4.5.x</block>
   <block id="955d0e9747f65e6a6a1963edce3fa678" category="cell">4.6.x</block>
-  <block id="9039ba0f0b3a3b38ef80aa48945fa3c0" category="admonition">例如、如果您使用的是SnapCenter 4.3.x版、并希望升级到4.6.x、则应先升级到4.5.x、然后再滚动升级到4.6.x</block>
   <block id="dd9f485e72f96875e028693823f26e70" category="inline-link">升级适用于 VMware vSphere 的 SnapCenter 插件</block>
-  <block id="25878f69131b31b18aeda7ba36139c1b" category="admonition">有关升级适用于 VMware vSphere 的 SnapCenter 插件的信息，请参见<block ref="9fa07c2f7a59d2185d48077e327b705e" category="inline-link-rx"></block>。</block>
   <block id="c589a9c8b3b9ae7adc1d5609288b15f4" category="summary">您可以使用 SnapCenter 服务器安装程序可执行文件升级 SnapCenter 服务器。</block>
   <block id="a3cda3d921cef60c05641ffbdfe003f5" category="doc">升级 SnapCenter 服务器</block>
   <block id="5ddb71adbd6daab9bc17e4749bc281f8" category="list-text">SnapCenter 服务器主机必须是最新的 Windows 更新，并且不会发生待定系统重新启动。</block>
@@ -7798,4 +7796,7 @@ NetApp®Single Mailbox Recovery已于2023年5月12日终止提供(EOA)。在支�
   <block id="76d78c694f90915981830809ea4ed0ea" category="paragraph"><block ref="76d78c694f90915981830809ea4ed0ea" category="inline-link-rx"></block></block>
   <block id="654bb6446b6bf43b65f5a763bbc17afe" category="paragraph"><block ref="654bb6446b6bf43b65f5a763bbc17afe" category="inline-link-rx"></block></block>
   <block id="79cfb9f00fa8ea603f631e679e453fad" category="paragraph">有关卸载 SnapCenter Plug-in for VMware vSphere 的信息，请参见<block ref="cae8a6db54fa4da6d80207fee61e78d1" category="inline-link-rx"></block>。</block>
+  <block id="820341dc67dd887805f2620efabe6669" category="paragraph">4.7</block>
+  <block id="55a10e59afdd4fd9142046de8d2f6de8" category="list-text">SnapCenter 仅支持沿上表中显示的路径进行直接升级。如果需要升级到当前版本不直接支持的版本，则必须执行一系列增量升级。例如，如果您使用的是 SnapCenter 版本 4.3.x 并希望升级到 4.6.x，则应首先升级到 4.5.x，然后进行滚动升级到 4.6.x。此方法可确保版本之间的兼容性，并防止跳过中间版本时可能发生的问题。在开始升级之前，请始终验证表中支持的升级路径。</block>
+  <block id="37ee3e1d3e0d52113ab43d76cc30554d" category="list-text">有关升级 SnapCenter Plug-in for VMware vSphere 的信息，请参见 <block ref="140f091e70d7a2d05862fe791778e9d6" category="inline-link-macro-rx"></block></block>
 </blocks>
